@@ -31,7 +31,11 @@ class ViewController: UIViewController, ViewControllerDelegate {
         }
     }
     @IBOutlet weak var costLabel: UILabel!
-    @IBOutlet weak var quantitiOrPriceLable: UISegmentedControl!
+    @IBOutlet weak var quantitiOrPriceLable: UISegmentedControl! {
+        didSet {
+            quantitiOrPriceLable.backgroundColor = UIColor.systemGray5
+        }
+    }
     
     var coinsName = ""
     var coinTiker = ""
@@ -146,9 +150,7 @@ class ViewController: UIViewController, ViewControllerDelegate {
       // MARK: - Настроить возврат к дефолтному состоянию после выбора категории
         }
     }
-    func test() {
-        print("Test")
-    }
+
    
     @IBAction func numberPressed(_ sender: UIButton) {
         // MARK: - Решить проблему с точкой и нулями, Возможно сделать больше кнопки, прилизать код

@@ -126,6 +126,7 @@ class DetailViewController: UIViewController {
 }
 
 extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
+   
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let dbCoins = realm.objects(EveryBuying.self)
         let realmQuery = dbCoins.where { //дает доступ ко всему рилму и к его всем элементам
@@ -137,6 +138,12 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: DetailTableViewCell = tableView.dequeueReusableCell(withIdentifier: "detailCell", for: indexPath) as! DetailTableViewCell
+        
+//        if ((indexPath.row % 2) != 0) {
+//            cell.backgroundColor = UIColor.white
+//        }else {
+//            cell.backgroundColor = UIColor.systemGray5
+//        }
         let dbQuery = realm.objects(EveryBuying.self)
                 let realmQuery = dbQuery.where {
                     $0.coin == nameLabel.text!
@@ -146,7 +153,7 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
         
 
         
-        cell.transactionLabel.text = "\(coin.transaction)"
+        cell.transactionLabel.text = "\(coin.transaction):"
         cell.quantityCellLabel.text = "\(FormatterStyle.shared.format(inputValue: "\(coin.quantity!)"))"
         cell.priceCellLabel.text = "\(coin.price!)"
         cell.dateCellLabel.text = "\(neededDate)"
@@ -157,7 +164,7 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+        return 60
     }
   
     

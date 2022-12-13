@@ -47,7 +47,11 @@ class AllCoinsTableViewController: UITableViewController{
    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "dataCell", for: indexPath)
-        
+//        if ((indexPath.row % 2) != 0) {
+//            cell.backgroundColor = UIColor.white
+//        }else {
+//            cell.backgroundColor = UIColor.systemGray5
+//        }
         let item = items[indexPath.row]
         cell.textLabel?.text = item.nameLabelText
         cell.detailTextLabel?.text = item.symbolLabelText
