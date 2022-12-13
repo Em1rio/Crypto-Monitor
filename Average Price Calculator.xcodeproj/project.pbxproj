@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC40E6F0A13A0AF02D44BCC3 /* Pods_Average_Price_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEDCD884A94230F9721E278 /* Pods_Average_Price_Calculator.framework */; };
+		FD420F2A2917C69000536976 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD420F292917C69000536976 /* AppDelegate.swift */; };
+		FD420F2C2917C69000536976 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD420F2B2917C69000536976 /* SceneDelegate.swift */; };
+		FD420F2E2917C69000536976 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD420F2D2917C69000536976 /* ViewController.swift */; };
+		FD420F312917C69000536976 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD420F2F2917C69000536976 /* Main.storyboard */; };
+		FD420F332917C69500536976 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD420F322917C69500536976 /* Assets.xcassets */; };
+		FD420F362917C69500536976 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD420F342917C69500536976 /* LaunchScreen.storyboard */; };
+		FD420F402917E17000536976 /* ListOfCryptoTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD420F3F2917E17000536976 /* ListOfCryptoTableVC.swift */; };
+		FD696A0E29226B8B00B0C897 /* AllCoins.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD696A0D29226B8B00B0C897 /* AllCoins.swift */; };
+		FD696A10292275D600B0C897 /* AllCoinsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD696A0F292275D600B0C897 /* AllCoinsTableViewController.swift */; };
+		FD696A122922783300B0C897 /* Displayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD696A112922783300B0C897 /* Displayable.swift */; };
+		FDCDC6EA292E60E800B5319D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDC6E9292E60E800B5319D /* DetailViewController.swift */; };
+		FDCDC6EC292E639F00B5319D /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDC6EB292E639F00B5319D /* DetailTableViewCell.swift */; };
+		FDD13B40292CF33400EEEF67 /* DBRealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD13B3F292CF33400EEEF67 /* DBRealmManager.swift */; };
+		FDD46F262944BE2A001D6BA7 /* MyCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD46F252944BE2A001D6BA7 /* MyCustomView.swift */; };
+		FDD4AF89293FB73400C10BB9 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD4AF88293FB73400C10BB9 /* Formatter.swift */; };
+		FDD96E8D293774A800ED6791 /* OneCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD96E8C293774A800ED6791 /* OneCoin.swift */; };
+		FDFD93452926941A00F4CFE3 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFD93442926941A00F4CFE3 /* DBManager.swift */; };
+		FDFD934829269F6000F4CFE3 /* CoinCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFD934729269F6000F4CFE3 /* CoinCategory.swift */; };
+		FDFD934A29269FB900F4CFE3 /* EveryBuying.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFD934929269FB900F4CFE3 /* EveryBuying.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7890EF1493F48DAEA3F57CF2 /* Pods-Average Price Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Average Price Calculator.release.xcconfig"; path = "Target Support Files/Pods-Average Price Calculator/Pods-Average Price Calculator.release.xcconfig"; sourceTree = "<group>"; };
+		A6C5542B7B6EBEEC8C255B39 /* Pods-Average Price Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Average Price Calculator.debug.xcconfig"; path = "Target Support Files/Pods-Average Price Calculator/Pods-Average Price Calculator.debug.xcconfig"; sourceTree = "<group>"; };
+		CEEDCD884A94230F9721E278 /* Pods_Average_Price_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Average_Price_Calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD420F262917C69000536976 /* Average Price Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Average Price Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD420F292917C69000536976 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD420F2B2917C69000536976 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FD420F2D2917C69000536976 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FD420F302917C69000536976 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD420F322917C69500536976 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD420F352917C69500536976 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD420F372917C69500536976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD420F3F2917E17000536976 /* ListOfCryptoTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfCryptoTableVC.swift; sourceTree = "<group>"; };
+		FD696A0D29226B8B00B0C897 /* AllCoins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCoins.swift; sourceTree = "<group>"; };
+		FD696A0F292275D600B0C897 /* AllCoinsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCoinsTableViewController.swift; sourceTree = "<group>"; };
+		FD696A112922783300B0C897 /* Displayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Displayable.swift; sourceTree = "<group>"; };
+		FDCDC6E9292E60E800B5319D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FDCDC6EB292E639F00B5319D /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		FDD13B3F292CF33400EEEF67 /* DBRealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBRealmManager.swift; sourceTree = "<group>"; };
+		FDD46F252944BE2A001D6BA7 /* MyCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomView.swift; sourceTree = "<group>"; };
+		FDD4AF88293FB73400C10BB9 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		FDD96E8C293774A800ED6791 /* OneCoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneCoin.swift; sourceTree = "<group>"; };
+		FDFD93442926941A00F4CFE3 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		FDFD934729269F6000F4CFE3 /* CoinCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCategory.swift; sourceTree = "<group>"; };
+		FDFD934929269FB900F4CFE3 /* EveryBuying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveryBuying.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD420F232917C69000536976 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC40E6F0A13A0AF02D44BCC3 /* Pods_Average_Price_Calculator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18495CB2F9A2D0D9AEEB24E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEEDCD884A94230F9721E278 /* Pods_Average_Price_Calculator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		496BA6497E8E4B13037C0384 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A6C5542B7B6EBEEC8C255B39 /* Pods-Average Price Calculator.debug.xcconfig */,
+				7890EF1493F48DAEA3F57CF2 /* Pods-Average Price Calculator.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FD420F1D2917C69000536976 = {
+			isa = PBXGroup;
+			children = (
+				FD420F282917C69000536976 /* Average Price Calculator */,
+				FD420F272917C69000536976 /* Products */,
+				496BA6497E8E4B13037C0384 /* Pods */,
+				18495CB2F9A2D0D9AEEB24E3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FD420F272917C69000536976 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD420F262917C69000536976 /* Average Price Calculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD420F282917C69000536976 /* Average Price Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				FDD13B41292D0C5800EEEF67 /* Services */,
+				FD8B12BC291BE5B100FAA911 /* tests */,
+				FDFD934629269F2600F4CFE3 /* RealmModel */,
+				FD696A0C29226B5300B0C897 /* Networking */,
+				FD420F292917C69000536976 /* AppDelegate.swift */,
+				FD420F2B2917C69000536976 /* SceneDelegate.swift */,
+				FD420F2F2917C69000536976 /* Main.storyboard */,
+				FD420F322917C69500536976 /* Assets.xcassets */,
+				FD420F342917C69500536976 /* LaunchScreen.storyboard */,
+				FD420F372917C69500536976 /* Info.plist */,
+				FD420F2D2917C69000536976 /* ViewController.swift */,
+				FD696A0F292275D600B0C897 /* AllCoinsTableViewController.swift */,
+				FD420F3F2917E17000536976 /* ListOfCryptoTableVC.swift */,
+				FDCDC6E9292E60E800B5319D /* DetailViewController.swift */,
+				FDCDC6EB292E639F00B5319D /* DetailTableViewCell.swift */,
+			);
+			path = "Average Price Calculator";
+			sourceTree = "<group>";
+		};
+		FD696A0C29226B5300B0C897 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				FD696A0D29226B8B00B0C897 /* AllCoins.swift */,
+				FDD96E8C293774A800ED6791 /* OneCoin.swift */,
+				FD696A112922783300B0C897 /* Displayable.swift */,
+				FDFD93442926941A00F4CFE3 /* DBManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		FD8B12BC291BE5B100FAA911 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				FDD46F252944BE2A001D6BA7 /* MyCustomView.swift */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		FDD13B41292D0C5800EEEF67 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FDD4AF88293FB73400C10BB9 /* Formatter.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FDFD934629269F2600F4CFE3 /* RealmModel */ = {
+			isa = PBXGroup;
+			children = (
+				FDFD934729269F6000F4CFE3 /* CoinCategory.swift */,
+				FDFD934929269FB900F4CFE3 /* EveryBuying.swift */,
+				FDD13B3F292CF33400EEEF67 /* DBRealmManager.swift */,
+			);
+			path = RealmModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD420F252917C69000536976 /* Average Price Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD420F3A2917C69500536976 /* Build configuration list for PBXNativeTarget "Average Price Calculator" */;
+			buildPhases = (
+				A84C9C5D058C70324ED2AF79 /* [CP] Check Pods Manifest.lock */,
+				FD420F222917C69000536976 /* Sources */,
+				FD420F232917C69000536976 /* Frameworks */,
+				FD420F242917C69000536976 /* Resources */,
+				DF881049F2C73E470058D087 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Average Price Calculator";
+			productName = "Average Price Calculator";
+			productReference = FD420F262917C69000536976 /* Average Price Calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD420F1E2917C69000536976 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					FD420F252917C69000536976 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = FD420F212917C69000536976 /* Build configuration list for PBXProject "Average Price Calculator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD420F1D2917C69000536976;
+			productRefGroup = FD420F272917C69000536976 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD420F252917C69000536976 /* Average Price Calculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD420F242917C69000536976 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD420F362917C69500536976 /* LaunchScreen.storyboard in Resources */,
+				FD420F332917C69500536976 /* Assets.xcassets in Resources */,
+				FD420F312917C69000536976 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A84C9C5D058C70324ED2AF79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Average Price Calculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF881049F2C73E470058D087 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Average Price Calculator/Pods-Average Price Calculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Average Price Calculator/Pods-Average Price Calculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Average Price Calculator/Pods-Average Price Calculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD420F222917C69000536976 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDD13B40292CF33400EEEF67 /* DBRealmManager.swift in Sources */,
+				FD420F2E2917C69000536976 /* ViewController.swift in Sources */,
+				FDFD93452926941A00F4CFE3 /* DBManager.swift in Sources */,
+				FD420F2A2917C69000536976 /* AppDelegate.swift in Sources */,
+				FD696A10292275D600B0C897 /* AllCoinsTableViewController.swift in Sources */,
+				FD420F2C2917C69000536976 /* SceneDelegate.swift in Sources */,
+				FDFD934A29269FB900F4CFE3 /* EveryBuying.swift in Sources */,
+				FD420F402917E17000536976 /* ListOfCryptoTableVC.swift in Sources */,
+				FDCDC6EC292E639F00B5319D /* DetailTableViewCell.swift in Sources */,
+				FDD96E8D293774A800ED6791 /* OneCoin.swift in Sources */,
+				FDD4AF89293FB73400C10BB9 /* Formatter.swift in Sources */,
+				FDFD934829269F6000F4CFE3 /* CoinCategory.swift in Sources */,
+				FDCDC6EA292E60E800B5319D /* DetailViewController.swift in Sources */,
+				FD696A122922783300B0C897 /* Displayable.swift in Sources */,
+				FDD46F262944BE2A001D6BA7 /* MyCustomView.swift in Sources */,
+				FD696A0E29226B8B00B0C897 /* AllCoins.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FD420F2F2917C69000536976 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD420F302917C69000536976 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD420F342917C69500536976 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD420F352917C69500536976 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD420F382917C69500536976 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD420F392917C69500536976 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD420F3B2917C69500536976 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6C5542B7B6EBEEC8C255B39 /* Pods-Average Price Calculator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 937225FCSX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Average Price Calculator/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Emir-Nasyrov.Average-Price-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD420F3C2917C69500536976 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7890EF1493F48DAEA3F57CF2 /* Pods-Average Price Calculator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 937225FCSX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Average Price Calculator/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Emir-Nasyrov.Average-Price-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD420F212917C69000536976 /* Build configuration list for PBXProject "Average Price Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD420F382917C69500536976 /* Debug */,
+				FD420F392917C69500536976 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD420F3A2917C69500536976 /* Build configuration list for PBXNativeTarget "Average Price Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD420F3B2917C69500536976 /* Debug */,
+				FD420F3C2917C69500536976 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD420F1E2917C69000536976 /* Project object */;
+}
