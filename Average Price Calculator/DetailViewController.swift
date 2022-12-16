@@ -49,6 +49,8 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var priceLabel: UILabel!
     
     @IBOutlet weak var priceChange24: UILabel!
+    
+    @IBOutlet weak var priceChange: UILabel!
     func updateUI(){
         symbolLabel.text = nameFromList
         nameLabel.text = fullNameFromList
@@ -85,10 +87,10 @@ class DetailViewController: UIViewController {
         let quantity = realmQuery.first!.coinQuantity!
         let price = realmQuery.first!.totalSpend!
         let avrgPrice = price / quantity
-        AveragePriceLabel.text = "\(FormatterStyle.shared.format(inputValue: "\(avrgPrice)"))"
+        AveragePriceLabel.text = "\(FormatterStyle.shared.formatPercentAndAverage(inputValue: "\(avrgPrice)"))"
         // print(AveragePriceLabel.text!)
         
-        //MARK: - Среднюю считает не верно, при продаже
+        
         
     }
     
@@ -98,6 +100,7 @@ class DetailViewController: UIViewController {
             $0.nameCoin == nameLabel.text!
         }
         let coinId = realmQuery.first!._id
+        
         let request = AF.request("https://api.coinlore.net/api/ticker/?id=\(coinId)")
         request.responseDecodable(of: Coin.self) { [self] (response) in
             guard let coin = response.value else {return}
@@ -106,10 +109,18 @@ class DetailViewController: UIViewController {
                 priceLabel.text = priceLabel.text?.replacingOccurrences(of: "Optional(", with: "", options: NSString.CompareOptions.literal, range: nil)
                 priceChange24.text = "\(coin.first!.percentChange24H)"
                 priceChange24.text = priceChange24.text?.replacingOccurrences(of: "Optional(", with: "", options: NSString.CompareOptions.literal, range: nil)
-                let price = try Decimal128(string: coin.first!.priceUsd)
-                let quantity = realmQuery.first!.coinQuantity
-                let totalCost = price * quantity!
+                
+                let priceRightNow = try Decimal128(string: coin.first!.priceUsd)
+                let totalSpend = realmQuery.first!.totalSpend!
+                let quantity = realmQuery.first!.coinQuantity!
+                let totalCost = priceRightNow * quantity
                 totalCostLabel.text = "\(FormatterStyle.shared.format(inputValue: "\(totalCost)"))"
+                let difference = (priceRightNow - (totalSpend / quantity)) / (totalSpend / quantity) * 100
+                priceChange.text = "\(FormatterStyle.shared.formatPercentAndAverage(inputValue: "\(difference)"))"
+                print(priceRightNow)
+                print(totalSpend / quantity)
+                print(priceRightNow - (totalSpend / quantity))
+                print(FormatterStyle.shared.formatPercentAndAverage(inputValue: "\(difference)"))
             }
             
             catch {
@@ -166,6 +177,10 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       tableView.deselectRow(at: indexPath, animated: true) //дл] того чтобы выбор был анимирован
+        
+   }
   
     
     

@@ -7,6 +7,7 @@
 
 import UIKit
 import RealmSwift
+import Alamofire
 
 
 class ListOfCryptoTableVC: UITableViewController{
@@ -73,6 +74,7 @@ class ListOfCryptoTableVC: UITableViewController{
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         readBuyingArray()
+        updateBalance()
       //  print(buyingArray!)
     }
     
@@ -127,6 +129,44 @@ class ListOfCryptoTableVC: UITableViewController{
         buyingArray = realm.objects(CoinCategory.self)
         self.tableView.setEditing(false, animated: true)
         self.tableView.reloadData()
+        
+    }
+    
+    func updateBalance() {
+       var id: [String] = []
+       func getSomeObject() -> [CoinCategory]? {
+            let objects = try! Realm().objects(CoinCategory.self).toArray(ofType: CoinCategory.self) as [CoinCategory]
+
+            return objects.count > 0 ? objects : nil
+        }
+        let array = objects.toArray(ofType: CoinCategory.self)
+        
+      
+        for item in array {
+            var id: String = ""
+            id = item._id
+            let intId = Int(id)
+            print(intId)
+            let request = AF.request("https://api.coinlore.net/api/ticker/?id=\(intId!)")
+            request.responseDecodable(of: Coin.self) { response in
+                guard let coin = response.value else {return}
+                do {
+                    print(response)
+                }
+                
+                catch {
+                    print("Failed with error \(error)")
+                }
+                
+            }
+            
+           id.append(item._id)
+            
+            
+        }
+        var intId = id.map {Int($0)!}
+        print(intId)
+
     }
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -186,5 +226,16 @@ class ListOfCryptoTableVC: UITableViewController{
     }
     
 
-
+//extension Results {
+//    func toArray<T>(ofType: T.Type) -> [T] {
+//        var array = [T]()
+//        for i in 0 ..< count {
+//            if let result = self[i] as? T {
+//                array.append(result)
+//            }
+//        }
+//
+//        return array
+//    }
+//}
 

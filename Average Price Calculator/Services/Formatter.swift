@@ -21,6 +21,14 @@ class FormatterStyle {
         numberFormatter.maximumFractionDigits = 16
         return numberFormatter.string(for: value)!
     }
+    func formatPercentAndAverage(inputValue: String) -> String {
+
+        let value = Decimal(string: inputValue )
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        numberFormatter.maximumFractionDigits = 2
+        return numberFormatter.string(for: value)!
+    }
 }
 
 //MARK: - Сделать форматтер для валют

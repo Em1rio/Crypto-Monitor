@@ -69,7 +69,8 @@ class AllCoinsTableViewController: UITableViewController{
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true) //дл] того чтобы выбор был анимирован
         delegate?.update(text: "\(selectedItem!.nameLabelText)", text2: "\( selectedItem!.symbolLabelText)", text3: "\(selectedItem!.id)")
-        
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.success)
        
         self.dismiss(animated: true)
         

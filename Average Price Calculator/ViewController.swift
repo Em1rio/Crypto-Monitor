@@ -49,7 +49,9 @@ class ViewController: UIViewController, ViewControllerDelegate {
     var symbolFromAll: String = ""
     var sellOrBuyMode = false
     var transaction: String = "Куплено"
+    let color = CABasicAnimation(keyPath: "borderColor")
     
+    @IBOutlet weak var viewWithNumbers: MyCustomView!
     @IBOutlet var categoriesLabel: [UIButton]!{
         didSet{
             for button in categoriesLabel {
@@ -123,9 +125,24 @@ class ViewController: UIViewController, ViewControllerDelegate {
         case 0:
             self.sellOrBuyMode = false
             transaction = "Куплено"
+            color.fromValue = UIColor.red.cgColor
+            color.toValue = UIColor.systemGreen.cgColor
+            color.duration = 1
+            color.repeatCount = 1
+            viewWithNumbers.layer.borderWidth = 2
+            viewWithNumbers.layer.borderColor = UIColor.systemGreen.cgColor
+            viewWithNumbers.layer.add(color, forKey: "borderColor")
+            
         case 1:
             self.sellOrBuyMode = true
             transaction = "Продано"
+                color.fromValue = UIColor.systemGreen.cgColor
+                color.toValue = UIColor.red.cgColor
+                color.duration = 1
+                color.repeatCount = 1
+            viewWithNumbers.layer.borderWidth = 2
+            viewWithNumbers.layer.borderColor = UIColor.red.cgColor
+            viewWithNumbers.layer.add(color, forKey: "borderColor")
         default: break
         }
     }
@@ -204,6 +221,8 @@ class ViewController: UIViewController, ViewControllerDelegate {
     
     @IBAction func categoryPressed(_ sender: UIButton) {
         //настраиваем параметры
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.success)
         coinsName = sender.currentTitle!
         if coinsName == "Bitcoin" {
             coinTiker = "BTC"

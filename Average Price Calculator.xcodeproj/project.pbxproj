@@ -24,6 +24,8 @@
 		FDD46F262944BE2A001D6BA7 /* MyCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD46F252944BE2A001D6BA7 /* MyCustomView.swift */; };
 		FDD4AF89293FB73400C10BB9 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD4AF88293FB73400C10BB9 /* Formatter.swift */; };
 		FDD96E8D293774A800ED6791 /* OneCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD96E8C293774A800ED6791 /* OneCoin.swift */; };
+		FDF8883C294CB764006E40C5 /* ListOfCryptoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8883B294CB764006E40C5 /* ListOfCryptoVC.swift */; };
+		FDF8883E294CBB5B006E40C5 /* ListOfTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8883D294CBB5B006E40C5 /* ListOfTableViewCell.swift */; };
 		FDFD93452926941A00F4CFE3 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFD93442926941A00F4CFE3 /* DBManager.swift */; };
 		FDFD934829269F6000F4CFE3 /* CoinCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFD934729269F6000F4CFE3 /* CoinCategory.swift */; };
 		FDFD934A29269FB900F4CFE3 /* EveryBuying.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFD934929269FB900F4CFE3 /* EveryBuying.swift */; };
@@ -51,6 +53,8 @@
 		FDD46F252944BE2A001D6BA7 /* MyCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomView.swift; sourceTree = "<group>"; };
 		FDD4AF88293FB73400C10BB9 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 		FDD96E8C293774A800ED6791 /* OneCoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneCoin.swift; sourceTree = "<group>"; };
+		FDF8883B294CB764006E40C5 /* ListOfCryptoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfCryptoVC.swift; sourceTree = "<group>"; };
+		FDF8883D294CBB5B006E40C5 /* ListOfTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfTableViewCell.swift; sourceTree = "<group>"; };
 		FDFD93442926941A00F4CFE3 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		FDFD934729269F6000F4CFE3 /* CoinCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCategory.swift; sourceTree = "<group>"; };
 		FDFD934929269FB900F4CFE3 /* EveryBuying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveryBuying.swift; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 				FD420F372917C69500536976 /* Info.plist */,
 				FD420F2D2917C69000536976 /* ViewController.swift */,
 				FD696A0F292275D600B0C897 /* AllCoinsTableViewController.swift */,
+				FDF8883B294CB764006E40C5 /* ListOfCryptoVC.swift */,
+				FDF8883D294CBB5B006E40C5 /* ListOfTableViewCell.swift */,
 				FD420F3F2917E17000536976 /* ListOfCryptoTableVC.swift */,
 				FDCDC6E9292E60E800B5319D /* DetailViewController.swift */,
 				FDCDC6EB292E639F00B5319D /* DetailTableViewCell.swift */,
@@ -283,6 +289,7 @@
 				FD420F2A2917C69000536976 /* AppDelegate.swift in Sources */,
 				FD696A10292275D600B0C897 /* AllCoinsTableViewController.swift in Sources */,
 				FD420F2C2917C69000536976 /* SceneDelegate.swift in Sources */,
+				FDF8883E294CBB5B006E40C5 /* ListOfTableViewCell.swift in Sources */,
 				FDFD934A29269FB900F4CFE3 /* EveryBuying.swift in Sources */,
 				FD420F402917E17000536976 /* ListOfCryptoTableVC.swift in Sources */,
 				FDCDC6EC292E639F00B5319D /* DetailTableViewCell.swift in Sources */,
@@ -290,6 +297,7 @@
 				FDD4AF89293FB73400C10BB9 /* Formatter.swift in Sources */,
 				FDFD934829269F6000F4CFE3 /* CoinCategory.swift in Sources */,
 				FDCDC6EA292E60E800B5319D /* DetailViewController.swift in Sources */,
+				FDF8883C294CB764006E40C5 /* ListOfCryptoVC.swift in Sources */,
 				FD696A122922783300B0C897 /* Displayable.swift in Sources */,
 				FDD46F262944BE2A001D6BA7 /* MyCustomView.swift in Sources */,
 				FD696A0E29226B8B00B0C897 /* AllCoins.swift in Sources */,
