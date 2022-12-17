@@ -29,6 +29,14 @@ class FormatterStyle {
         numberFormatter.maximumFractionDigits = 2
         return numberFormatter.string(for: value)!
     }
+    func formatCurrency(inputValue: String) -> String {
+        let value = Decimal(string: inputValue)
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .currency
+        numberFormatter.maximumFractionDigits = 2
+        numberFormatter.locale = Locale(identifier: "es_CL")
+        return numberFormatter.string(for: value)!
+    }
 }
 
 //MARK: - Сделать форматтер для валют

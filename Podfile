@@ -8,5 +8,6 @@ target 'Average Price Calculator' do
   pod 'PureLayout'
   pod 'RealmSwift', '~>10'
   pod 'Alamofire', '~> 5.5'
+  pod 'JGProgressHUD'
 
 end

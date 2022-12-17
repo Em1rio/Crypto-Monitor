@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.6.2)
+  - JGProgressHUD (2.2)
   - PureLayout (3.1.9)
   - Realm (10.32.1):
     - Realm/Headers (= 10.32.1)
@@ -9,22 +10,25 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 5.5)
+  - JGProgressHUD
   - PureLayout
   - RealmSwift (~> 10)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - JGProgressHUD
     - PureLayout
     - Realm
     - RealmSwift
 
 SPEC CHECKSUMS:
   Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  JGProgressHUD: d83d7a981b85d11205e19ff8ad5bb9c40571c847
   PureLayout: 5fb5e5429519627d60d079ccb1eaa7265ce7cf88
   Realm: fd821b81e5479be497cc5bca2e020f707d8323eb
   RealmSwift: 8635e4cc524790916d72b0ffa51c1a91f4ec9668
 
-PODFILE CHECKSUM: eca1058df2c49385d6d41f4fb7baa8fae83ff762
+PODFILE CHECKSUM: 7c49ed4c3f39ab7fb6ecf3e0c2572ab281ad899f
 
 COCOAPODS: 1.11.3

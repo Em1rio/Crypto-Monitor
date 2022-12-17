@@ -46,10 +46,10 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "ViewController"
-            landmarkType = "3">
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "coinArrayCategory"
+            landmarkType = "24">
             <Locations>
                <Location
                   uuid = "A1B9BF10-0E76-46D6-9FD2-CB96ED667EC6 - 7b59971b6d8a860f"
@@ -109,8 +109,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "update(text:text2:text3:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -125,8 +125,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -141,10 +141,10 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
-            landmarkName = "ViewControllerDelegate"
-            landmarkType = "5">
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "update(text:text2:text3:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -207,7 +207,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "115"
             endingLineNumber = "115"
-            landmarkName = "tableView(_:moveRowAt:to:)"
+            landmarkName = "tableView(tableView:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -269,8 +269,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -676,8 +676,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "310"
-            endingLineNumber = "310"
+            startingLineNumber = "326"
+            endingLineNumber = "326"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -692,8 +692,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "311"
-            endingLineNumber = "311"
+            startingLineNumber = "327"
+            endingLineNumber = "327"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
             <Locations>
@@ -740,8 +740,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "312"
-            endingLineNumber = "312"
+            startingLineNumber = "328"
+            endingLineNumber = "328"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -756,8 +756,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "313"
-            endingLineNumber = "313"
+            startingLineNumber = "329"
+            endingLineNumber = "329"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -772,8 +772,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "314"
-            endingLineNumber = "314"
+            startingLineNumber = "330"
+            endingLineNumber = "330"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -788,8 +788,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "315"
-            endingLineNumber = "315"
+            startingLineNumber = "331"
+            endingLineNumber = "331"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -804,8 +804,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "316"
-            endingLineNumber = "316"
+            startingLineNumber = "332"
+            endingLineNumber = "332"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -820,8 +820,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "317"
-            endingLineNumber = "317"
+            startingLineNumber = "333"
+            endingLineNumber = "333"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -836,8 +836,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "318"
-            endingLineNumber = "318"
+            startingLineNumber = "334"
+            endingLineNumber = "334"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -852,8 +852,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "319"
-            endingLineNumber = "319"
+            startingLineNumber = "335"
+            endingLineNumber = "335"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -868,8 +868,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "320"
-            endingLineNumber = "320"
+            startingLineNumber = "336"
+            endingLineNumber = "336"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -884,8 +884,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "321"
-            endingLineNumber = "321"
+            startingLineNumber = "337"
+            endingLineNumber = "337"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -900,8 +900,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "322"
-            endingLineNumber = "322"
+            startingLineNumber = "338"
+            endingLineNumber = "338"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
             <Locations>
@@ -948,8 +948,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "323"
-            endingLineNumber = "323"
+            startingLineNumber = "339"
+            endingLineNumber = "339"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -964,8 +964,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "325"
-            endingLineNumber = "325"
+            startingLineNumber = "341"
+            endingLineNumber = "341"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
             <Locations>
@@ -1012,8 +1012,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "327"
-            endingLineNumber = "327"
+            startingLineNumber = "343"
+            endingLineNumber = "343"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1028,8 +1028,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "328"
-            endingLineNumber = "328"
+            startingLineNumber = "344"
+            endingLineNumber = "344"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1044,8 +1044,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "329"
-            endingLineNumber = "329"
+            startingLineNumber = "345"
+            endingLineNumber = "345"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1060,8 +1060,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "330"
-            endingLineNumber = "330"
+            startingLineNumber = "346"
+            endingLineNumber = "346"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1076,8 +1076,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "331"
-            endingLineNumber = "331"
+            startingLineNumber = "347"
+            endingLineNumber = "347"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1092,8 +1092,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "332"
-            endingLineNumber = "332"
+            startingLineNumber = "348"
+            endingLineNumber = "348"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1108,8 +1108,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "333"
-            endingLineNumber = "333"
+            startingLineNumber = "349"
+            endingLineNumber = "349"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
             <Locations>
@@ -1156,8 +1156,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "334"
-            endingLineNumber = "334"
+            startingLineNumber = "350"
+            endingLineNumber = "350"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1172,8 +1172,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "335"
-            endingLineNumber = "335"
+            startingLineNumber = "351"
+            endingLineNumber = "351"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1188,8 +1188,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "336"
-            endingLineNumber = "336"
+            startingLineNumber = "352"
+            endingLineNumber = "352"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1204,8 +1204,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "337"
-            endingLineNumber = "337"
+            startingLineNumber = "353"
+            endingLineNumber = "353"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1220,8 +1220,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "339"
-            endingLineNumber = "339"
+            startingLineNumber = "355"
+            endingLineNumber = "355"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1236,8 +1236,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "340"
-            endingLineNumber = "340"
+            startingLineNumber = "356"
+            endingLineNumber = "356"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1252,8 +1252,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "341"
-            endingLineNumber = "341"
+            startingLineNumber = "357"
+            endingLineNumber = "357"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1268,8 +1268,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "342"
-            endingLineNumber = "342"
+            startingLineNumber = "358"
+            endingLineNumber = "358"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1284,8 +1284,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "343"
-            endingLineNumber = "343"
+            startingLineNumber = "359"
+            endingLineNumber = "359"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
             <Locations>
@@ -1332,8 +1332,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "345"
-            endingLineNumber = "345"
+            startingLineNumber = "361"
+            endingLineNumber = "361"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1348,8 +1348,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "346"
-            endingLineNumber = "346"
+            startingLineNumber = "362"
+            endingLineNumber = "362"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1801,8 +1801,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
+            startingLineNumber = "114"
+            endingLineNumber = "114"
             landmarkName = "ViewController"
             landmarkType = "3">
          </BreakpointContent>

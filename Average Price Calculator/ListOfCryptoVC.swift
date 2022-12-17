@@ -22,9 +22,19 @@ class ListOfCryptoVC: UIViewController {
             .sorted(by: \.index, ascending: true)
     }()
     
-    @IBOutlet var tableViewLabel: UITableView!
+    @IBOutlet var tableViewLabel: UITableView! {
+        didSet {
+            tableViewLabel.layer.borderColor = UIColor.systemGray5.cgColor
+            tableViewLabel.layer.borderWidth = 0.5
+        }
+    }
     @IBOutlet weak var displayLabel: UILabel!
 
+    @IBOutlet weak var allTimeLabel: UILabel!
+    
+    
+    
+  
     override func viewDidLoad() {
         super.viewDidLoad()
        
@@ -48,7 +58,8 @@ class ListOfCryptoVC: UIViewController {
     func updateBalance() {
 //        var IdWithPrice: [Int: String] = [:]
         var totalCost: Decimal128 = 0.0
-        var twentyFoureHouresCost = 0
+       // var twentyFoureHouresCost = 0
+        var difference: Decimal128 = 0.0
         
        func getSomeObject() -> [CoinCategory]? {
             let objects = try! Realm().objects(CoinCategory.self).toArray(ofType: CoinCategory.self) as [CoinCategory]
@@ -56,15 +67,18 @@ class ListOfCryptoVC: UIViewController {
             return objects.count > 0 ? objects : nil
         }
         let array = objects.toArray(ofType: CoinCategory.self)
+        
+  
        
       
         for item in array {
+            
             var id: String = ""
             id = item._id
             let intId = Int(id)
             var price: Decimal128 = 0.0
             
-            let request = AF.request("https://api.coinlore.net/api/ticker/?id=\(intId!)")
+            let request = AF.request("https://api.coinlore.net/api/ticker/?id=\(id)")
             request.responseDecodable(of: Coin.self) { [self] response in
                 guard let coin = response.value else {return}
                 do {
@@ -78,7 +92,21 @@ class ListOfCryptoVC: UIViewController {
                     let quantity = realmQuery.first?.coinQuantity
                     totalCost += price * quantity!
                     print(FormatterStyle.shared.formatPercentAndAverage(inputValue: "\(totalCost)"))
-                    displayLabel.text = FormatterStyle.shared.formatPercentAndAverage(inputValue: "\(totalCost)")
+                    displayLabel.text = FormatterStyle.shared.formatCurrency(inputValue: "\(totalCost)")
+                    let totalSpend = realmQuery.first!.totalSpend!
+                    let step1 = price - (totalSpend / quantity!)
+                    let step2 = totalSpend / quantity!
+                    let step3 = step1 / step2
+                    difference += step3 * 100
+                    if difference > 0 {
+                        allTimeLabel.textColor = UIColor.systemGreen
+                        allTimeLabel.text = "\(FormatterStyle.shared.formatPercentAndAverage(inputValue: "\(difference)"))%"
+                    } else {
+                        allTimeLabel.textColor = UIColor.systemRed
+                        allTimeLabel.text = "\(FormatterStyle.shared.formatPercentAndAverage(inputValue: "\(difference)"))%"
+                        
+                    }
+                    
                 }
                 
                 catch {

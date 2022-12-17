@@ -8,6 +8,7 @@ import Foundation
 import UIKit
 import RealmSwift
 import Alamofire
+import JGProgressHUD
 
 protocol ViewControllerDelegate: AnyObject {
     func update(text: String, text2: String, text3: String)
@@ -79,11 +80,17 @@ class ViewController: UIViewController, ViewControllerDelegate {
         } else {
             SellCategoryToBD()
         }
+        showSuccessHud()
        
         
     }
     
-    
+    func showSuccessHud() {
+        let hud = JGProgressHUD()
+        hud.indicatorView = JGProgressHUDSuccessIndicatorView()
+        hud.show(in: view)
+        hud.dismiss(afterDelay: 2)
+    }
     
     
     
@@ -247,6 +254,14 @@ class ViewController: UIViewController, ViewControllerDelegate {
             coinTiker = "SAND"
             coinsName = "The Sandbox"
             coinId = "45161"
+        }else if coinsName == "USDT" {
+            coinTiker = "USDT"
+            coinsName = "Tether"
+            coinId = "518"
+        }else if coinsName == "Cardano" {
+            coinTiker = "ADA"
+            coinsName = "Cardano"
+            coinId = "257"
         } else {
         }
         if sellOrBuyMode == false {
@@ -254,6 +269,7 @@ class ViewController: UIViewController, ViewControllerDelegate {
         } else {
             SellCategoryToBD()
         }
+        showSuccessHud()
         
 
     }

@@ -87,7 +87,7 @@ class DetailViewController: UIViewController {
         let quantity = realmQuery.first!.coinQuantity!
         let price = realmQuery.first!.totalSpend!
         let avrgPrice = price / quantity
-        AveragePriceLabel.text = "\(FormatterStyle.shared.formatPercentAndAverage(inputValue: "\(avrgPrice)"))"
+        AveragePriceLabel.text = "\(FormatterStyle.shared.formatCurrency(inputValue: "\(avrgPrice)"))"
         // print(AveragePriceLabel.text!)
         
         
@@ -105,7 +105,7 @@ class DetailViewController: UIViewController {
         request.responseDecodable(of: Coin.self) { [self] (response) in
             guard let coin = response.value else {return}
             do {
-                priceLabel.text = "\(coin.first!.priceUsd)"
+                priceLabel.text =  "\(coin.first!.priceUsd)"
                 priceLabel.text = priceLabel.text?.replacingOccurrences(of: "Optional(", with: "", options: NSString.CompareOptions.literal, range: nil)
                 priceChange24.text = "\(coin.first!.percentChange24H)"
                 priceChange24.text = priceChange24.text?.replacingOccurrences(of: "Optional(", with: "", options: NSString.CompareOptions.literal, range: nil)
@@ -114,13 +114,10 @@ class DetailViewController: UIViewController {
                 let totalSpend = realmQuery.first!.totalSpend!
                 let quantity = realmQuery.first!.coinQuantity!
                 let totalCost = priceRightNow * quantity
-                totalCostLabel.text = "\(FormatterStyle.shared.format(inputValue: "\(totalCost)"))"
+                totalCostLabel.text = "\(FormatterStyle.shared.formatCurrency(inputValue: "\(totalCost)"))"
                 let difference = (priceRightNow - (totalSpend / quantity)) / (totalSpend / quantity) * 100
-                priceChange.text = "\(FormatterStyle.shared.formatPercentAndAverage(inputValue: "\(difference)"))"
-                print(priceRightNow)
-                print(totalSpend / quantity)
-                print(priceRightNow - (totalSpend / quantity))
-                print(FormatterStyle.shared.formatPercentAndAverage(inputValue: "\(difference)"))
+                priceChange.text = "\(FormatterStyle.shared.formatPercentAndAverage(inputValue: "\(difference)"))%"
+               
             }
             
             catch {
@@ -166,9 +163,9 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
         
         cell.transactionLabel.text = "\(coin.transaction):"
         cell.quantityCellLabel.text = "\(FormatterStyle.shared.format(inputValue: "\(coin.quantity!)"))"
-        cell.priceCellLabel.text = "\(coin.price!)"
+        cell.priceCellLabel.text = "\(FormatterStyle.shared.formatCurrency(inputValue: "\(coin.price!)"))"
         cell.dateCellLabel.text = "\(neededDate)"
-        cell.totalCostCellLabel.text = "\(FormatterStyle.shared.format(inputValue: "\(coin.price!.decimalNumberByMultiplying(by: coin.quantity!))"))"
+        cell.totalCostCellLabel.text = "\(FormatterStyle.shared.formatCurrency(inputValue: "\(coin.price!.decimalNumberByMultiplying(by: coin.quantity!))"))"
        
         
    
@@ -195,7 +192,7 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
             layer.masksToBounds = (newValue > 0)
         }
     }
-
+    
 
 
 }
