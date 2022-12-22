@@ -8,8 +8,7 @@
 import Foundation
 import RealmSwift
 
-// _id сделть тикером как положено, и создать нормальный id для отслеживания по номерам
-// Принимать измение за 24 часа
+
 
 class CoinCategory: Object, IndexableObject {
     @Persisted(primaryKey: true) var _id: String

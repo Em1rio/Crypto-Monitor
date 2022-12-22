@@ -88,6 +88,8 @@ class ViewController: UIViewController, ViewControllerDelegate {
     func showSuccessHud() {
         let hud = JGProgressHUD()
         hud.indicatorView = JGProgressHUDSuccessIndicatorView()
+        hud.indicatorView?.tintColor = .systemGreen
+        
         hud.show(in: view)
         hud.dismiss(afterDelay: 2)
     }

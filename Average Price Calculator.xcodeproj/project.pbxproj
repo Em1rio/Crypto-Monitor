@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EC40E6F0A13A0AF02D44BCC3 /* Pods_Average_Price_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEDCD884A94230F9721E278 /* Pods_Average_Price_Calculator.framework */; };
+		FD27F9ED295487B300AD06F7 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD27F9EC295487B300AD06F7 /* NetworkMonitor.swift */; };
 		FD420F2A2917C69000536976 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD420F292917C69000536976 /* AppDelegate.swift */; };
 		FD420F2C2917C69000536976 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD420F2B2917C69000536976 /* SceneDelegate.swift */; };
 		FD420F2E2917C69000536976 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD420F2D2917C69000536976 /* ViewController.swift */; };
@@ -24,17 +25,18 @@
 		FDD46F262944BE2A001D6BA7 /* MyCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD46F252944BE2A001D6BA7 /* MyCustomView.swift */; };
 		FDD4AF89293FB73400C10BB9 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD4AF88293FB73400C10BB9 /* Formatter.swift */; };
 		FDD96E8D293774A800ED6791 /* OneCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD96E8C293774A800ED6791 /* OneCoin.swift */; };
+		FDEB6EE12951D0600007553B /* AllCoinsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEB6EE02951D05F0007553B /* AllCoinsModel.swift */; };
 		FDF8883C294CB764006E40C5 /* ListOfCryptoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8883B294CB764006E40C5 /* ListOfCryptoVC.swift */; };
 		FDF8883E294CBB5B006E40C5 /* ListOfTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF8883D294CBB5B006E40C5 /* ListOfTableViewCell.swift */; };
 		FDFD93452926941A00F4CFE3 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFD93442926941A00F4CFE3 /* DBManager.swift */; };
 		FDFD934829269F6000F4CFE3 /* CoinCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFD934729269F6000F4CFE3 /* CoinCategory.swift */; };
-		FDFD934A29269FB900F4CFE3 /* EveryBuying.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFD934929269FB900F4CFE3 /* EveryBuying.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7890EF1493F48DAEA3F57CF2 /* Pods-Average Price Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Average Price Calculator.release.xcconfig"; path = "Target Support Files/Pods-Average Price Calculator/Pods-Average Price Calculator.release.xcconfig"; sourceTree = "<group>"; };
 		A6C5542B7B6EBEEC8C255B39 /* Pods-Average Price Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Average Price Calculator.debug.xcconfig"; path = "Target Support Files/Pods-Average Price Calculator/Pods-Average Price Calculator.debug.xcconfig"; sourceTree = "<group>"; };
 		CEEDCD884A94230F9721E278 /* Pods_Average_Price_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Average_Price_Calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD27F9EC295487B300AD06F7 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		FD420F262917C69000536976 /* Average Price Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Average Price Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD420F292917C69000536976 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD420F2B2917C69000536976 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,11 +55,11 @@
 		FDD46F252944BE2A001D6BA7 /* MyCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomView.swift; sourceTree = "<group>"; };
 		FDD4AF88293FB73400C10BB9 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 		FDD96E8C293774A800ED6791 /* OneCoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneCoin.swift; sourceTree = "<group>"; };
+		FDEB6EE02951D05F0007553B /* AllCoinsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCoinsModel.swift; sourceTree = "<group>"; };
 		FDF8883B294CB764006E40C5 /* ListOfCryptoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfCryptoVC.swift; sourceTree = "<group>"; };
 		FDF8883D294CBB5B006E40C5 /* ListOfTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfTableViewCell.swift; sourceTree = "<group>"; };
 		FDFD93442926941A00F4CFE3 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		FDFD934729269F6000F4CFE3 /* CoinCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCategory.swift; sourceTree = "<group>"; };
-		FDFD934929269FB900F4CFE3 /* EveryBuying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveryBuying.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				FDD4AF88293FB73400C10BB9 /* Formatter.swift */,
+				FD27F9EC295487B300AD06F7 /* NetworkMonitor.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -162,8 +165,8 @@
 			isa = PBXGroup;
 			children = (
 				FDFD934729269F6000F4CFE3 /* CoinCategory.swift */,
-				FDFD934929269FB900F4CFE3 /* EveryBuying.swift */,
 				FDD13B3F292CF33400EEEF67 /* DBRealmManager.swift */,
+				FDEB6EE02951D05F0007553B /* AllCoinsModel.swift */,
 			);
 			path = RealmModel;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDEB6EE12951D0600007553B /* AllCoinsModel.swift in Sources */,
 				FDD13B40292CF33400EEEF67 /* DBRealmManager.swift in Sources */,
 				FD420F2E2917C69000536976 /* ViewController.swift in Sources */,
 				FDFD93452926941A00F4CFE3 /* DBManager.swift in Sources */,
@@ -290,7 +294,6 @@
 				FD696A10292275D600B0C897 /* AllCoinsTableViewController.swift in Sources */,
 				FD420F2C2917C69000536976 /* SceneDelegate.swift in Sources */,
 				FDF8883E294CBB5B006E40C5 /* ListOfTableViewCell.swift in Sources */,
-				FDFD934A29269FB900F4CFE3 /* EveryBuying.swift in Sources */,
 				FD420F402917E17000536976 /* ListOfCryptoTableVC.swift in Sources */,
 				FDCDC6EC292E639F00B5319D /* DetailTableViewCell.swift in Sources */,
 				FDD96E8D293774A800ED6791 /* OneCoin.swift in Sources */,
@@ -299,6 +302,7 @@
 				FDCDC6EA292E60E800B5319D /* DetailViewController.swift in Sources */,
 				FDF8883C294CB764006E40C5 /* ListOfCryptoVC.swift in Sources */,
 				FD696A122922783300B0C897 /* Displayable.swift in Sources */,
+				FD27F9ED295487B300AD06F7 /* NetworkMonitor.swift in Sources */,
 				FDD46F262944BE2A001D6BA7 /* MyCustomView.swift in Sources */,
 				FD696A0E29226B8B00B0C897 /* AllCoins.swift in Sources */,
 			);
