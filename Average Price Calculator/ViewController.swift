@@ -63,7 +63,7 @@ class ViewController: UIViewController, ViewControllerDelegate {
     
     
 
-    
+    //MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             guard let destination = segue.destination as? AllCoinsTableViewController else { return }
             destination.delegate = self
@@ -85,49 +85,30 @@ class ViewController: UIViewController, ViewControllerDelegate {
         
     }
     
+    //MARK: - UI надо куда то убрать
     func showSuccessHud() {
         let hud = JGProgressHUD()
         hud.indicatorView = JGProgressHUDSuccessIndicatorView()
         hud.indicatorView?.tintColor = .systemGreen
         
         hud.show(in: view)
-        hud.dismiss(afterDelay: 2)
+        hud.dismiss(afterDelay: 0.6)
     }
     
     
     
     
     
-    
+    // MARK: - Lifecycle
     override func viewDidLoad() {
      super.viewDidLoad()
         
-//        var swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(respondToSwipeGesture))
-//        swipeDown.direction = UISwipeGestureRecognizer.Direction.down
-//            self.view.addGestureRecognizer(swipeDown)
+
        
     
     }// end ViewDidLoad
     
-//    @objc func respondToSwipeGesture(gesture: UIGestureRecognizer) {
-//        
-//        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
-//            
-//            switch swipeGesture.direction {
-//                
-//            case UISwipeGestureRecognizer.Direction.down:
-//                
-//                print("Swiped Down")
-//            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-//
-//                let resultViewController = storyBoard.instantiateViewController(withIdentifier: "SellVC") as! ViewController
-//
-//                self.present(resultViewController, animated:true, completion:nil)
-//            default:
-//                break
-//            }
-//        }
-//    }
+    //MARK: - Это должно быть во вью отдельном?
    
     @IBAction func SellOrBuy(_ sender: UISegmentedControl) {
         switch (sender as AnyObject).selectedSegmentIndex {
@@ -145,16 +126,18 @@ class ViewController: UIViewController, ViewControllerDelegate {
         case 1:
             self.sellOrBuyMode = true
             transaction = "Продано"
-                color.fromValue = UIColor.systemGreen.cgColor
-                color.toValue = UIColor.red.cgColor
-                color.duration = 1
-                color.repeatCount = 1
+            color.fromValue = UIColor.systemGreen.cgColor
+            color.toValue = UIColor.red.cgColor
+            color.duration = 1
+            color.repeatCount = 1
             viewWithNumbers.layer.borderWidth = 2
             viewWithNumbers.layer.borderColor = UIColor.red.cgColor
             viewWithNumbers.layer.add(color, forKey: "borderColor")
         default: break
         }
     }
+    
+    
     
     @IBAction func AllCoins(_ sender: UIButton) {
         self.performSegue(withIdentifier: "segue", sender: self)
@@ -176,11 +159,14 @@ class ViewController: UIViewController, ViewControllerDelegate {
       // MARK: - Настроить возврат к дефолтному состоянию после выбора категории
         }
     }
-
+    let decimalSeparator = NumberFormatter().decimalSeparator ?? "."
    
     @IBAction func numberPressed(_ sender: UIButton) {
         // MARK: - Решить проблему с точкой и нулями, Возможно сделать больше кнопки, прилизать код
+        let digit = sender.currentTitle!
+     
         guard howManyCoinsLabel.text != "." && costLabel.text != "." else {return resetButton(sender)}
+//        guard  (digit == decimalSeparator) && ((howManyCoinsLabel.text!.localizedStandardRange(of: ".")) != nil) && (costLabel.text!.localizedStandardRange(of: ".") != nil) else {return}
         if segmentControlIsOn == false {
             let number = sender.currentTitle!
             if number == "0.00" && howManyCoinsLabel.text == "0.00" {
@@ -188,8 +174,9 @@ class ViewController: UIViewController, ViewControllerDelegate {
             }
             else {
                 if stillTyping {
-                    if howManyCoinsLabel.text!.count < 10 {
+                    if howManyCoinsLabel.text!.count < 10  {
                         howManyCoinsLabel.text = howManyCoinsLabel.text! + number
+                        
                     }
                 }else {
                     howManyCoinsLabel.text = number
@@ -230,7 +217,7 @@ class ViewController: UIViewController, ViewControllerDelegate {
     
     @IBAction func categoryPressed(_ sender: UIButton) {
         //настраиваем параметры
-        let generator = UINotificationFeedbackGenerator()
+        let generator = UINotificationFeedbackGenerator() //Тактильная отдача при нажатии
         generator.notificationOccurred(.success)
         coinsName = sender.currentTitle!
         if coinsName == "Bitcoin" {

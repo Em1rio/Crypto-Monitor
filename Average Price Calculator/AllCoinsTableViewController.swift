@@ -19,11 +19,8 @@ class AllCoinsTableViewController: UITableViewController{
     var selectedItemOffline: AllCoinsModel?
     var coins: [Datum] = []
     let realm = try! Realm()
-//    lazy var coinArrayCategory: Results<AllCoinsModel> = {self.realm.objects(AllCoinsModel.self)} ()
     lazy var allCoins: Results<AllCoinsModel> = {self.realm.objects(AllCoinsModel.self)} ()
-   
-//    var savedData: [AllCoinsModel] = []
-//    var filteredData = [String]()
+
     weak var delegate: ViewControllerDelegate?
     
     
@@ -35,19 +32,7 @@ class AllCoinsTableViewController: UITableViewController{
         super.viewDidLoad()
         
         loadData()
-       
-            
-            
-        
-       
-        
-       
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
@@ -58,13 +43,8 @@ class AllCoinsTableViewController: UITableViewController{
     func loadData() {
         guard allCoins.isEmpty == true else {return}
             if NetworkMonitor.shared.isConnected {
-                print(NetworkMonitor.shared.connectionType)
-                print(NetworkMonitor.shared.isConnected)
                 fetchCoins()
             } else {
-                print(NetworkMonitor.shared.connectionType)
-                print(NetworkMonitor.shared.isConnected)
-                print("test")
                 showConnectionAlertHud()
 
             }
@@ -138,60 +118,10 @@ class AllCoinsTableViewController: UITableViewController{
         self.dismiss(animated: true)
         
     }
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if(segue.identifier == "segue") {
-//            let vc = segue.destination as? ViewController
-//            vc?.nameFromAll = selectedItem!.nameLabelText
-//            vc?.symbolFromAll = selectedItem!.symbolLabelText
-//                }
-//    }
-
-   
-    
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 
 
-
-
-
-
-//extension AllCoinsTableViewController: UISearchBarDelegate {
-    
-//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-//        self.filteredData.removeAll()
-//        guard searchText != "" || searchText != " " else {
-//            print("empty search")
-//            return
-//        }
-//
-//
-//    }
-    
-//    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-//        guard let coinName = searchBar.text else {return}
-//        print(searchBar.text)
-//        searchCoins(for: coinName)
-//
-//    }
-//    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-//      searchBar.text = nil
-//      searchBar.resignFirstResponder()
-//      items = coins
-//      tableView.reloadData()
-//    }
-//}
 
 extension AllCoinsTableViewController {
     func fetchCoins() {

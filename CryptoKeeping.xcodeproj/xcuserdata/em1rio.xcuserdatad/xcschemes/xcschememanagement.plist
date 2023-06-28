@@ -9,6 +9,16 @@
 			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
+		<key>Crypto keeping.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>CryptoKeeping.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 	</dict>
 </dict>
 </plist>

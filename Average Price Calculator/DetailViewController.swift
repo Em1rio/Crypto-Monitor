@@ -23,16 +23,7 @@ class DetailViewController: UIViewController {
     lazy var buyingArray: Results<CoinCategory> = {self.realm.objects(CoinCategory.self)} ()
     var coins: List<EveryBuying>!
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     
     @IBOutlet weak var nameLabel: UILabel!
     
@@ -88,10 +79,6 @@ class DetailViewController: UIViewController {
         let price = realmQuery.first!.totalSpend!
         let avrgPrice = price / quantity
         AveragePriceLabel.text = "\(FormatterStyle.shared.formatCurrency(inputValue: "\(avrgPrice)"))"
-        // print(AveragePriceLabel.text!)
-        
-        
-        
     }
     
     func fetchMarketPrice() {
@@ -114,7 +101,7 @@ class DetailViewController: UIViewController {
                 let totalSpend = realmQuery.first!.totalSpend!
                 let quantity = realmQuery.first!.coinQuantity!
                 let totalCost = priceRightNow * quantity
-                totalCostLabel.text = "\(FormatterStyle.shared.formatCurrency(inputValue: "\(totalCost)"))"
+                totalCostLabel.text = "\(FormatterStyle.shared.format(inputValue: "\(totalCost)"))"
                 let difference = (priceRightNow - (totalSpend / quantity)) / (totalSpend / quantity) * 100
                 priceChange.text = "\(FormatterStyle.shared.formatPercentAndAverage(inputValue: "\(difference)"))%"
                
@@ -166,9 +153,6 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
         cell.priceCellLabel.text = "\(FormatterStyle.shared.formatCurrency(inputValue: "\(coin.price!)"))"
         cell.dateCellLabel.text = "\(neededDate)"
         cell.totalCostCellLabel.text = "\(FormatterStyle.shared.formatCurrency(inputValue: "\(coin.price!.decimalNumberByMultiplying(by: coin.quantity!))"))"
-       
-        
-   
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
