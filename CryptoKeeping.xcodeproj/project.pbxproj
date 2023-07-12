@@ -113,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				FDD13B41292D0C5800EEEF67 /* Services */,
-				FD8B12BC291BE5B100FAA911 /* tests */,
+				FD8B12BC291BE5B100FAA911 /* CustomViews */,
 				FDFD934629269F2600F4CFE3 /* RealmModel */,
 				FD696A0C29226B5300B0C897 /* Networking */,
 				FD420F292917C69000536976 /* AppDelegate.swift */,
@@ -125,10 +125,9 @@
 				FD420F2D2917C69000536976 /* ViewController.swift */,
 				FD696A0F292275D600B0C897 /* AllCoinsTableViewController.swift */,
 				FDF8883B294CB764006E40C5 /* ListOfCryptoVC.swift */,
-				FDF8883D294CBB5B006E40C5 /* ListOfTableViewCell.swift */,
-				FD420F3F2917E17000536976 /* ListOfCryptoTableVC.swift */,
 				FDCDC6E9292E60E800B5319D /* DetailViewController.swift */,
 				FDCDC6EB292E639F00B5319D /* DetailTableViewCell.swift */,
+				FDAD03C82A4EEDBB00E02A5C /* oldCode */,
 			);
 			path = "Average Price Calculator";
 			sourceTree = "<group>";
@@ -144,12 +143,21 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		FD8B12BC291BE5B100FAA911 /* tests */ = {
+		FD8B12BC291BE5B100FAA911 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
 				FDD46F252944BE2A001D6BA7 /* MyCustomView.swift */,
 			);
-			path = tests;
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		FDAD03C82A4EEDBB00E02A5C /* oldCode */ = {
+			isa = PBXGroup;
+			children = (
+				FDF8883D294CBB5B006E40C5 /* ListOfTableViewCell.swift */,
+				FD420F3F2917E17000536976 /* ListOfCryptoTableVC.swift */,
+			);
+			path = oldCode;
 			sourceTree = "<group>";
 		};
 		FDD13B41292D0C5800EEEF67 /* Services */ = {

@@ -10,6 +10,7 @@ import RealmSwift
 import Alamofire
 import JGProgressHUD
 
+
 protocol ViewControllerDelegate: AnyObject {
     func update(text: String, text2: String, text3: String)
 }
@@ -22,7 +23,7 @@ class ViewController: UIViewController, ViewControllerDelegate {
     lazy var coinArrayCategory: Results<CoinCategory> = {self.realm.objects(CoinCategory.self)} ()
     var coins: List<EveryBuying>!
  
-    @IBOutlet weak var segmentedControlLable: UISegmentedControl!
+//    @IBOutlet weak var segmentedControlLable: UISegmentedControl! // Не используется?
     @IBOutlet weak var howManyCoinsLabel: UILabel!
     @IBOutlet var Keyboard: [UIButton]!{
         didSet{
@@ -81,24 +82,18 @@ class ViewController: UIViewController, ViewControllerDelegate {
             SellCategoryToBD()
         }
         showSuccessHud()
+
        
         
     }
-    
-    //MARK: - UI надо куда то убрать
     func showSuccessHud() {
         let hud = JGProgressHUD()
         hud.indicatorView = JGProgressHUDSuccessIndicatorView()
         hud.indicatorView?.tintColor = .systemGreen
-        
+       
         hud.show(in: view)
         hud.dismiss(afterDelay: 0.6)
     }
-    
-    
-    
-    
-    
     // MARK: - Lifecycle
     override func viewDidLoad() {
      super.viewDidLoad()
@@ -142,6 +137,7 @@ class ViewController: UIViewController, ViewControllerDelegate {
     @IBAction func AllCoins(_ sender: UIButton) {
         self.performSegue(withIdentifier: "segue", sender: self)
     }
+    
     @IBAction func coinsOrCostTyping(_ sender: Any) {
         switch (sender as AnyObject).selectedSegmentIndex {
         case 0:
@@ -159,14 +155,15 @@ class ViewController: UIViewController, ViewControllerDelegate {
       // MARK: - Настроить возврат к дефолтному состоянию после выбора категории
         }
     }
-    let decimalSeparator = NumberFormatter().decimalSeparator ?? "."
+
    
     @IBAction func numberPressed(_ sender: UIButton) {
         // MARK: - Решить проблему с точкой и нулями, Возможно сделать больше кнопки, прилизать код
-        let digit = sender.currentTitle!
+
      
         guard howManyCoinsLabel.text != "." && costLabel.text != "." else {return resetButton(sender)}
-//        guard  (digit == decimalSeparator) && ((howManyCoinsLabel.text!.localizedStandardRange(of: ".")) != nil) && (costLabel.text!.localizedStandardRange(of: ".") != nil) else {return}
+        guard howManyCoinsLabel.text != "00" && costLabel.text != "00" else {return resetButton(sender)}
+
         if segmentControlIsOn == false {
             let number = sender.currentTitle!
             if number == "0.00" && howManyCoinsLabel.text == "0.00" {
@@ -176,7 +173,7 @@ class ViewController: UIViewController, ViewControllerDelegate {
                 if stillTyping {
                     if howManyCoinsLabel.text!.count < 10  {
                         howManyCoinsLabel.text = howManyCoinsLabel.text! + number
-                        
+
                     }
                 }else {
                     howManyCoinsLabel.text = number
@@ -216,6 +213,7 @@ class ViewController: UIViewController, ViewControllerDelegate {
     }
     
     @IBAction func categoryPressed(_ sender: UIButton) {
+       
         //настраиваем параметры
         let generator = UINotificationFeedbackGenerator() //Тактильная отдача при нажатии
         generator.notificationOccurred(.success)
@@ -258,13 +256,17 @@ class ViewController: UIViewController, ViewControllerDelegate {
         } else {
             SellCategoryToBD()
         }
+        quantitiOrPriceLable.selectedSegmentIndex = 0
+        coinsOrCostTyping(quantitiOrPriceLable as Any)
         showSuccessHud()
         
 
     }
     
     func SellCategoryToBD () {
-        print("Sell some crypto from DB")
+        guard howManyCoinsLabel.text != "." && costLabel.text != "." else {return}
+        guard howManyCoinsLabel.text != "00" && costLabel.text != "00" else {return}
+        
         howManyValue = Decimal128(floatLiteral: Double(howManyCoinsLabel.text!)!)
         costValue = Decimal128(floatLiteral: Double(costLabel.text!)!)
         howManyCoinsLabel.text = "0.00"
@@ -311,7 +313,8 @@ class ViewController: UIViewController, ViewControllerDelegate {
     }
     
     func BuyCategoryToDB () {
-       
+        guard howManyCoinsLabel.text != "." && costLabel.text != "." else {return}
+        guard howManyCoinsLabel.text != "00" && costLabel.text != "00" else {return}
         howManyValue = Decimal128(floatLiteral: Double(howManyCoinsLabel.text!)!)
         costValue = Decimal128(floatLiteral: Double(costLabel.text!)!)
         howManyCoinsLabel.text = "0.00"

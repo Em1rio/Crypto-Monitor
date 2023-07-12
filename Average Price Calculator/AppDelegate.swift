@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,6 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         NetworkMonitor.shared.startMonitoring()
+        let config = Realm.Configuration(schemaVersion: 3, migrationBlock: {migration, oldSchema in if oldSchema < 3{}})
+        Realm.Configuration.defaultConfiguration = config
+        let _ = try! Realm()
         return true
     }
 

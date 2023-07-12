@@ -14,55 +14,55 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
             landmarkName = "ViewController"
             landmarkType = "3">
             <Locations>
                <Location
-                  uuid = "A1B9BF10-0E76-46D6-9FD2-CB96ED667EC6 - 7b59971b6d8a860f"
+                  uuid = "A1B9BF10-0E76-46D6-9FD2-CB96ED667EC6 - 98422b7c540f3a62"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Average_Price_Calculator.ViewController.realm.getter : RealmSwift.Realm"
-                  moduleName = "Average Price Calculator"
+                  symbolName = "CryptoKeeping.ViewController.realm.getter : RealmSwift.Realm"
+                  moduleName = "CryptoKeeping"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
                   offsetFromSymbolStart = "49">
                </Location>
                <Location
-                  uuid = "A1B9BF10-0E76-46D6-9FD2-CB96ED667EC6 - 7817a228f8ae9e59"
+                  uuid = "A1B9BF10-0E76-46D6-9FD2-CB96ED667EC6 - d3895143629b89c3"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Average_Price_Calculator.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Average_Price_Calculator.ViewController"
-                  moduleName = "Average Price Calculator"
+                  symbolName = "CryptoKeeping.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; CryptoKeeping.ViewController"
+                  moduleName = "CryptoKeeping"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "214">
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "295">
                </Location>
                <Location
-                  uuid = "A1B9BF10-0E76-46D6-9FD2-CB96ED667EC6 - 27fffc8c7a1d971"
+                  uuid = "A1B9BF10-0E76-46D6-9FD2-CB96ED667EC6 - 51fd5861a0e6f7bc"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Average_Price_Calculator.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Average_Price_Calculator.ViewController&gt;"
-                  moduleName = "Average Price Calculator"
+                  symbolName = "CryptoKeeping.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;CryptoKeeping.ViewController&gt;"
+                  moduleName = "CryptoKeeping"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
-                  offsetFromSymbolStart = "185">
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "266">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -77,8 +77,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "update(text:text2:text3:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -93,8 +93,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -109,8 +109,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
             landmarkName = "ViewControllerDelegate"
             landmarkType = "5">
          </BreakpointContent>
@@ -125,8 +125,8 @@
             filePath = "Average Price Calculator/AllCoinsTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -141,8 +141,8 @@
             filePath = "Average Price Calculator/AllCoinsTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -189,10 +189,10 @@
             filePath = "Average Price Calculator/AllCoinsTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
-            landmarkName = "AllCoinsTableViewController"
-            landmarkType = "3">
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "tableView(_:willSelectRowAt:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -205,10 +205,10 @@
             filePath = "Average Price Calculator/AllCoinsTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
-            landmarkName = "AllCoinsTableViewController"
-            landmarkType = "3">
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -221,8 +221,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -394,8 +394,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "64"
             endingLineNumber = "64"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
+            landmarkName = "DetailViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -410,8 +410,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "84"
             endingLineNumber = "84"
-            landmarkName = "DetailViewController"
-            landmarkType = "3">
+            landmarkName = "fetchMarketPrice()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -424,10 +424,10 @@
             filePath = "Average Price Calculator/AllCoinsTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "160"
-            endingLineNumber = "160"
-            landmarkName = "AllCoinsTableViewController"
-            landmarkType = "21">
+            startingLineNumber = "162"
+            endingLineNumber = "162"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -440,8 +440,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "315"
-            endingLineNumber = "315"
+            startingLineNumber = "318"
+            endingLineNumber = "318"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -456,8 +456,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "316"
-            endingLineNumber = "316"
+            startingLineNumber = "319"
+            endingLineNumber = "319"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
             <Locations>
@@ -504,54 +504,6 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "317"
-            endingLineNumber = "317"
-            landmarkName = "BuyCategoryToDB()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7B5A3E84-BDF1-44FC-830D-EB71B6B8BA70"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Average Price Calculator/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "318"
-            endingLineNumber = "318"
-            landmarkName = "BuyCategoryToDB()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "9A218504-DA25-436A-8E6F-F314E9DD34D7"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Average Price Calculator/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "319"
-            endingLineNumber = "319"
-            landmarkName = "BuyCategoryToDB()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C81C5122-028C-40C5-A9B6-BD99F028637C"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Average Price Calculator/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
             startingLineNumber = "320"
             endingLineNumber = "320"
             landmarkName = "BuyCategoryToDB()"
@@ -561,7 +513,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C5DC2894-9F4E-48F7-9254-C48FE29957B6"
+            uuid = "7B5A3E84-BDF1-44FC-830D-EB71B6B8BA70"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -577,7 +529,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DE7AD9D8-9A70-47C6-8FB2-CDE24F276B2F"
+            uuid = "9A218504-DA25-436A-8E6F-F314E9DD34D7"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -593,7 +545,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "AF4CCE2D-2A24-497F-B3B6-26F86E714422"
+            uuid = "C81C5122-028C-40C5-A9B6-BD99F028637C"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -609,7 +561,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2C1440D3-95B4-49E1-ABFF-3617CEF2105B"
+            uuid = "C5DC2894-9F4E-48F7-9254-C48FE29957B6"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -625,7 +577,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1D930BF2-212C-48BF-B6FA-3A84C9C53D73"
+            uuid = "DE7AD9D8-9A70-47C6-8FB2-CDE24F276B2F"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -641,7 +593,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1059C47A-C4FF-419D-AAA5-39DB983CEAA3"
+            uuid = "AF4CCE2D-2A24-497F-B3B6-26F86E714422"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -657,7 +609,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "CE6FC8E7-0202-4B59-B4A1-74B2A4081700"
+            uuid = "2C1440D3-95B4-49E1-ABFF-3617CEF2105B"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -666,6 +618,54 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "327"
             endingLineNumber = "327"
+            landmarkName = "BuyCategoryToDB()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1D930BF2-212C-48BF-B6FA-3A84C9C53D73"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Average Price Calculator/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "328"
+            endingLineNumber = "328"
+            landmarkName = "BuyCategoryToDB()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1059C47A-C4FF-419D-AAA5-39DB983CEAA3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Average Price Calculator/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "329"
+            endingLineNumber = "329"
+            landmarkName = "BuyCategoryToDB()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CE6FC8E7-0202-4B59-B4A1-74B2A4081700"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Average Price Calculator/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "330"
+            endingLineNumber = "330"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
             <Locations>
@@ -712,8 +712,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "328"
-            endingLineNumber = "328"
+            startingLineNumber = "331"
+            endingLineNumber = "331"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -728,8 +728,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "330"
-            endingLineNumber = "330"
+            startingLineNumber = "333"
+            endingLineNumber = "333"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
             <Locations>
@@ -776,54 +776,6 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "332"
-            endingLineNumber = "332"
-            landmarkName = "BuyCategoryToDB()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "10D034C6-9CB3-4443-8356-90B759D86BF1"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Average Price Calculator/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "333"
-            endingLineNumber = "333"
-            landmarkName = "BuyCategoryToDB()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C4D226C2-2A39-4339-845F-D9FB0B094FFE"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Average Price Calculator/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "334"
-            endingLineNumber = "334"
-            landmarkName = "BuyCategoryToDB()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0E7C776E-AF40-4C4E-B153-F7A611AB3669"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Average Price Calculator/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
             startingLineNumber = "335"
             endingLineNumber = "335"
             landmarkName = "BuyCategoryToDB()"
@@ -833,7 +785,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "71E8C78E-02A3-4917-9689-FA9EDF55A38D"
+            uuid = "10D034C6-9CB3-4443-8356-90B759D86BF1"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -849,7 +801,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "877E5C55-E77A-4C05-A51E-B92D8F28320C"
+            uuid = "C4D226C2-2A39-4339-845F-D9FB0B094FFE"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -865,7 +817,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C58BE614-8E47-4DA3-A96F-2D700274FFF8"
+            uuid = "0E7C776E-AF40-4C4E-B153-F7A611AB3669"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -874,6 +826,54 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "338"
             endingLineNumber = "338"
+            landmarkName = "BuyCategoryToDB()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "71E8C78E-02A3-4917-9689-FA9EDF55A38D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Average Price Calculator/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "339"
+            endingLineNumber = "339"
+            landmarkName = "BuyCategoryToDB()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "877E5C55-E77A-4C05-A51E-B92D8F28320C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Average Price Calculator/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "340"
+            endingLineNumber = "340"
+            landmarkName = "BuyCategoryToDB()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C58BE614-8E47-4DA3-A96F-2D700274FFF8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Average Price Calculator/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "341"
+            endingLineNumber = "341"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
             <Locations>
@@ -920,8 +920,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "339"
-            endingLineNumber = "339"
+            startingLineNumber = "342"
+            endingLineNumber = "342"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -936,8 +936,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "340"
-            endingLineNumber = "340"
+            startingLineNumber = "343"
+            endingLineNumber = "343"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -946,38 +946,6 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "0C86C2F5-2C33-44E6-89FA-195386BF6022"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Average Price Calculator/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "341"
-            endingLineNumber = "341"
-            landmarkName = "BuyCategoryToDB()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "FC9D223D-6D36-4066-8DEC-F0BC8FB32A74"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Average Price Calculator/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "342"
-            endingLineNumber = "342"
-            landmarkName = "BuyCategoryToDB()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "38FA83C2-BC1C-4B09-8102-9465EC926825"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -993,7 +961,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "ECB0784B-F1D0-4AF8-892E-60111AEBBADE"
+            uuid = "FC9D223D-6D36-4066-8DEC-F0BC8FB32A74"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -1009,23 +977,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "59BA8F84-C9E0-4B32-8DB9-9A1E573E6EA5"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Average Price Calculator/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "346"
-            endingLineNumber = "346"
-            landmarkName = "BuyCategoryToDB()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "22353BC8-2A21-4436-B921-DE9C71DA6C20"
+            uuid = "38FA83C2-BC1C-4B09-8102-9465EC926825"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -1041,7 +993,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A7320F32-6F36-4590-A8D2-871A80098C32"
+            uuid = "ECB0784B-F1D0-4AF8-892E-60111AEBBADE"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -1050,6 +1002,54 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "348"
             endingLineNumber = "348"
+            landmarkName = "BuyCategoryToDB()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "59BA8F84-C9E0-4B32-8DB9-9A1E573E6EA5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Average Price Calculator/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "349"
+            endingLineNumber = "349"
+            landmarkName = "BuyCategoryToDB()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "22353BC8-2A21-4436-B921-DE9C71DA6C20"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Average Price Calculator/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "350"
+            endingLineNumber = "350"
+            landmarkName = "BuyCategoryToDB()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A7320F32-6F36-4590-A8D2-871A80098C32"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Average Price Calculator/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "351"
+            endingLineNumber = "351"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
             <Locations>
@@ -1096,8 +1096,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "350"
-            endingLineNumber = "350"
+            startingLineNumber = "353"
+            endingLineNumber = "353"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1112,8 +1112,8 @@
             filePath = "Average Price Calculator/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "351"
-            endingLineNumber = "351"
+            startingLineNumber = "354"
+            endingLineNumber = "354"
             landmarkName = "BuyCategoryToDB()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1961,8 +1961,8 @@
             filePath = "Average Price Calculator/AllCoinsTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1977,8 +1977,8 @@
             filePath = "Average Price Calculator/AllCoinsTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1987,22 +1987,6 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "57669BA5-D203-4970-843A-D0D551C8C8EB"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Average Price Calculator/AllCoinsTableViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "loadData()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "22EAAC6D-53B5-440A-8304-6BE9DEB7CF1D"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -2018,7 +2002,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DA421048-0E0A-4369-903E-39545A45C4BA"
+            uuid = "22EAAC6D-53B5-440A-8304-6BE9DEB7CF1D"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -2034,6 +2018,22 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "DA421048-0E0A-4369-903E-39545A45C4BA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Average Price Calculator/AllCoinsTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "loadData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
             uuid = "13E599C3-1FA6-4F9C-A965-F9E62DDB829D"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -2041,9 +2041,1087 @@
             filePath = "Average Price Calculator/AllCoinsTableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "loadData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "27E0EF3B-521C-48AD-9EF5-1C160661236B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Average Price Calculator/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "27E0EF3B-521C-48AD-9EF5-1C160661236B - 3b67fd2842374125"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.ViewController.coins.getter : Swift.Optional&lt;RealmSwift.List&lt;CryptoKeeping.EveryBuying&gt;&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "94">
+               </Location>
+               <Location
+                  uuid = "27E0EF3B-521C-48AD-9EF5-1C160661236B - 302b157af17b5831"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.ViewController.coins.setter : Swift.Optional&lt;RealmSwift.List&lt;CryptoKeeping.EveryBuying&gt;&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "27E0EF3B-521C-48AD-9EF5-1C160661236B - 73628ce34c1b73e2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.ViewController.coins.modify : Swift.Optional&lt;RealmSwift.List&lt;CryptoKeeping.EveryBuying&gt;&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "27E0EF3B-521C-48AD-9EF5-1C160661236B - 8b4477b552541595"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.ViewController.coins.modify : Swift.Optional&lt;RealmSwift.List&lt;CryptoKeeping.EveryBuying&gt;&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  uuid = "27E0EF3B-521C-48AD-9EF5-1C160661236B - d3895143629b8a1d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; CryptoKeeping.ViewController"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "394">
+               </Location>
+               <Location
+                  uuid = "27E0EF3B-521C-48AD-9EF5-1C160661236B - 51fd5861a0e6f462"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;CryptoKeeping.ViewController&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "356">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B38866B4-CF7B-4894-902A-483888C82FAD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Average Price Calculator/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "B38866B4-CF7B-4894-902A-483888C82FAD - 80a60a3c169211c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.ViewController.coinArrayCategory.getter : RealmSwift.Results&lt;CryptoKeeping.CoinCategory&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "187">
+               </Location>
+               <Location
+                  uuid = "B38866B4-CF7B-4894-902A-483888C82FAD - 6ba5ecebdce396e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; RealmSwift.Results&lt;CryptoKeeping.CoinCategory&gt; in CryptoKeeping.ViewController.coinArrayCategory.getter : RealmSwift.Results&lt;CryptoKeeping.CoinCategory&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "B38866B4-CF7B-4894-902A-483888C82FAD - 352d30d67ff37ad1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.ViewController.coinArrayCategory.setter : RealmSwift.Results&lt;CryptoKeeping.CoinCategory&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "B38866B4-CF7B-4894-902A-483888C82FAD - 69a3a367c13b2b00"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.ViewController.coinArrayCategory.modify : RealmSwift.Results&lt;CryptoKeeping.CoinCategory&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "B38866B4-CF7B-4894-902A-483888C82FAD - e511cd7ba60dc0fa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.ViewController.coinArrayCategory.modify : RealmSwift.Results&lt;CryptoKeeping.CoinCategory&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "17">
+               </Location>
+               <Location
+                  uuid = "B38866B4-CF7B-4894-902A-483888C82FAD - d3895143629b89fc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; CryptoKeeping.ViewController"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "366">
+               </Location>
+               <Location
+                  uuid = "B38866B4-CF7B-4894-902A-483888C82FAD - 51fd5861a0e6f783"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;CryptoKeeping.ViewController&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "331">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "24A969C5-4DEF-4738-9F39-5ECB306ABF82"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Average Price Calculator/AllCoinsTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "AllCoinsTableViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "24A969C5-4DEF-4738-9F39-5ECB306ABF82 - 9237d30db3684b60"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.items.getter : Swift.Array&lt;CryptoKeeping.Displayable&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "90">
+               </Location>
+               <Location
+                  uuid = "24A969C5-4DEF-4738-9F39-5ECB306ABF82 - 94eb0abf2e6636c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.items.setter : Swift.Array&lt;CryptoKeeping.Displayable&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "24A969C5-4DEF-4738-9F39-5ECB306ABF82 - c6751ea48b21cd5d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.items.modify : Swift.Array&lt;CryptoKeeping.Displayable&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "24A969C5-4DEF-4738-9F39-5ECB306ABF82 - 3e4bb98240a7f4e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.items.modify : Swift.Array&lt;CryptoKeeping.Displayable&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  uuid = "24A969C5-4DEF-4738-9F39-5ECB306ABF82 - 5659326dcf859457"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.init(style: __C.UITableViewStyle) -&gt; CryptoKeeping.AllCoinsTableViewController"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "134">
+               </Location>
+               <Location
+                  uuid = "24A969C5-4DEF-4738-9F39-5ECB306ABF82 - 23ddc36cb2e8b521"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; CryptoKeeping.AllCoinsTableViewController"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "190">
+               </Location>
+               <Location
+                  uuid = "24A969C5-4DEF-4738-9F39-5ECB306ABF82 - ec78042f6afb2158"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;CryptoKeeping.AllCoinsTableViewController&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "134">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6BAFED85-7147-487D-913F-988AF968BA20"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Average Price Calculator/AllCoinsTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "AllCoinsTableViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "6BAFED85-7147-487D-913F-988AF968BA20 - 6ea0f5faf01b4dec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.selectedItem.getter : Swift.Optional&lt;CryptoKeeping.Displayable&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "85">
+               </Location>
+               <Location
+                  uuid = "6BAFED85-7147-487D-913F-988AF968BA20 - efd942b7279d65f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.selectedItem.setter : Swift.Optional&lt;CryptoKeeping.Displayable&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "122">
+               </Location>
+               <Location
+                  uuid = "6BAFED85-7147-487D-913F-988AF968BA20 - 1cfc6bde3cefc7ef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.selectedItem.modify : Swift.Optional&lt;CryptoKeeping.Displayable&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "6BAFED85-7147-487D-913F-988AF968BA20 - 11886ac6f5caf1ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.selectedItem.modify : Swift.Optional&lt;CryptoKeeping.Displayable&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  uuid = "6BAFED85-7147-487D-913F-988AF968BA20 - 5659326dcf859474"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.init(style: __C.UITableViewStyle) -&gt; CryptoKeeping.AllCoinsTableViewController"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "200">
+               </Location>
+               <Location
+                  uuid = "6BAFED85-7147-487D-913F-988AF968BA20 - 23ddc36cb2e8b502"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; CryptoKeeping.AllCoinsTableViewController"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "262">
+               </Location>
+               <Location
+                  uuid = "6BAFED85-7147-487D-913F-988AF968BA20 - ec78042f6afb217b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;CryptoKeeping.AllCoinsTableViewController&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "200">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3B5BFB8E-D908-481D-8D85-1BD523245E5C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Average Price Calculator/AllCoinsTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "AllCoinsTableViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "3B5BFB8E-D908-481D-8D85-1BD523245E5C - 68566f617cd6f530"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.selectedItemOffline.getter : Swift.Optional&lt;CryptoKeeping.AllCoinsModel&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "94">
+               </Location>
+               <Location
+                  uuid = "3B5BFB8E-D908-481D-8D85-1BD523245E5C - d4754ebf2464fd3c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.selectedItemOffline.setter : Swift.Optional&lt;CryptoKeeping.AllCoinsModel&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "3B5BFB8E-D908-481D-8D85-1BD523245E5C - 4658cce4736e9b2d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.selectedItemOffline.modify : Swift.Optional&lt;CryptoKeeping.AllCoinsModel&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "3B5BFB8E-D908-481D-8D85-1BD523245E5C - b61f255f610ccb7c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.selectedItemOffline.modify : Swift.Optional&lt;CryptoKeeping.AllCoinsModel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  uuid = "3B5BFB8E-D908-481D-8D85-1BD523245E5C - 5659326dcf859415"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.init(style: __C.UITableViewStyle) -&gt; CryptoKeeping.AllCoinsTableViewController"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "261">
+               </Location>
+               <Location
+                  uuid = "3B5BFB8E-D908-481D-8D85-1BD523245E5C - 23ddc36cb2e8b563"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; CryptoKeeping.AllCoinsTableViewController"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "323">
+               </Location>
+               <Location
+                  uuid = "3B5BFB8E-D908-481D-8D85-1BD523245E5C - ec78042f6afb211a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;CryptoKeeping.AllCoinsTableViewController&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "261">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "739067E4-7C33-49D2-8BE9-5F999AFB2E9B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Average Price Calculator/AllCoinsTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "AllCoinsTableViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "739067E4-7C33-49D2-8BE9-5F999AFB2E9B - 7d260ba15948d180"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.coins.getter : Swift.Array&lt;CryptoKeeping.Datum&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "90">
+               </Location>
+               <Location
+                  uuid = "739067E4-7C33-49D2-8BE9-5F999AFB2E9B - f4755ab434dab194"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.coins.setter : Swift.Array&lt;CryptoKeeping.Datum&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "739067E4-7C33-49D2-8BE9-5F999AFB2E9B - 96e501a1aa77987"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.coins.modify : Swift.Array&lt;CryptoKeeping.Datum&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "739067E4-7C33-49D2-8BE9-5F999AFB2E9B - fd090bc21685bc73"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.coins.modify : Swift.Array&lt;CryptoKeeping.Datum&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  uuid = "739067E4-7C33-49D2-8BE9-5F999AFB2E9B - 5659326dcf859432"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.init(style: __C.UITableViewStyle) -&gt; CryptoKeeping.AllCoinsTableViewController"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "282">
+               </Location>
+               <Location
+                  uuid = "739067E4-7C33-49D2-8BE9-5F999AFB2E9B - 23ddc36cb2e8b544"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; CryptoKeeping.AllCoinsTableViewController"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "344">
+               </Location>
+               <Location
+                  uuid = "739067E4-7C33-49D2-8BE9-5F999AFB2E9B - ec78042f6afb213d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;CryptoKeeping.AllCoinsTableViewController&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "282">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8D56133C-0866-4F3B-A8E5-BD991C83855B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Average Price Calculator/AllCoinsTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "AllCoinsTableViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "8D56133C-0866-4F3B-A8E5-BD991C83855B - f3746ac95135d742"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.realm.getter : RealmSwift.Realm"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "49">
+               </Location>
+               <Location
+                  uuid = "8D56133C-0866-4F3B-A8E5-BD991C83855B - 5659326dcf8595d3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.init(style: __C.UITableViewStyle) -&gt; CryptoKeeping.AllCoinsTableViewController"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "337">
+               </Location>
+               <Location
+                  uuid = "8D56133C-0866-4F3B-A8E5-BD991C83855B - 23ddc36cb2e8b4a5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; CryptoKeeping.AllCoinsTableViewController"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "399">
+               </Location>
+               <Location
+                  uuid = "8D56133C-0866-4F3B-A8E5-BD991C83855B - ec78042f6afb20dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;CryptoKeeping.AllCoinsTableViewController&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "337">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "496A3C34-BBFD-41FF-8DAF-BF5A172C539B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Average Price Calculator/AllCoinsTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "AllCoinsTableViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "496A3C34-BBFD-41FF-8DAF-BF5A172C539B - 7eb98f8b856b17ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.allCoins.getter : RealmSwift.Results&lt;CryptoKeeping.AllCoinsModel&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "187">
+               </Location>
+               <Location
+                  uuid = "496A3C34-BBFD-41FF-8DAF-BF5A172C539B - 945aeb656f4389db"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; RealmSwift.Results&lt;CryptoKeeping.AllCoinsModel&gt; in CryptoKeeping.AllCoinsTableViewController.allCoins.getter : RealmSwift.Results&lt;CryptoKeeping.AllCoinsModel&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "496A3C34-BBFD-41FF-8DAF-BF5A172C539B - 89e33d40f3e5a3bf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.allCoins.setter : RealmSwift.Results&lt;CryptoKeeping.AllCoinsModel&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "496A3C34-BBFD-41FF-8DAF-BF5A172C539B - 80fa6413ddad6aae"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.allCoins.modify : RealmSwift.Results&lt;CryptoKeeping.AllCoinsModel&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "496A3C34-BBFD-41FF-8DAF-BF5A172C539B - b431b399bd2c007f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.allCoins.modify : RealmSwift.Results&lt;CryptoKeeping.AllCoinsModel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "17">
+               </Location>
+               <Location
+                  uuid = "496A3C34-BBFD-41FF-8DAF-BF5A172C539B - 5659326dcf8595f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.init(style: __C.UITableViewStyle) -&gt; CryptoKeeping.AllCoinsTableViewController"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "425">
+               </Location>
+               <Location
+                  uuid = "496A3C34-BBFD-41FF-8DAF-BF5A172C539B - 23ddc36cb2e8b486"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; CryptoKeeping.AllCoinsTableViewController"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "470">
+               </Location>
+               <Location
+                  uuid = "496A3C34-BBFD-41FF-8DAF-BF5A172C539B - ec78042f6afb20ff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;CryptoKeeping.AllCoinsTableViewController&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "408">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5FB61383-2435-4EC4-BEE6-D920CA44E1DC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Average Price Calculator/AllCoinsTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "AllCoinsTableViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "5FB61383-2435-4EC4-BEE6-D920CA44E1DC - 799b9963793124de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.delegate.getter : Swift.Optional&lt;CryptoKeeping.ViewControllerDelegate&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "109">
+               </Location>
+               <Location
+                  uuid = "5FB61383-2435-4EC4-BEE6-D920CA44E1DC - 7d86daba9b7fab2a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.delegate.setter : Swift.Optional&lt;CryptoKeeping.ViewControllerDelegate&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "139">
+               </Location>
+               <Location
+                  uuid = "5FB61383-2435-4EC4-BEE6-D920CA44E1DC - f75c2be31ef6a8dd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.delegate.modify : Swift.Optional&lt;CryptoKeeping.ViewControllerDelegate&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "5FB61383-2435-4EC4-BEE6-D920CA44E1DC - 4e33fabc3d96d7f7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.delegate.modify : Swift.Optional&lt;CryptoKeeping.ViewControllerDelegate&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  uuid = "5FB61383-2435-4EC4-BEE6-D920CA44E1DC - 5659326dcf8595be"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.init(style: __C.UITableViewStyle) -&gt; CryptoKeeping.AllCoinsTableViewController"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "449">
+               </Location>
+               <Location
+                  uuid = "5FB61383-2435-4EC4-BEE6-D920CA44E1DC - 23ddc36cb2e8b4c8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; CryptoKeeping.AllCoinsTableViewController"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "498">
+               </Location>
+               <Location
+                  uuid = "5FB61383-2435-4EC4-BEE6-D920CA44E1DC - ec78042f6afb20b1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CryptoKeeping.AllCoinsTableViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;CryptoKeeping.AllCoinsTableViewController&gt;"
+                  moduleName = "CryptoKeeping"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/SSD/Development/Average%20Price%20Calculator/Average%20Price%20Calculator/AllCoinsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "436">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BD67178F-7842-43B5-AFAB-39112FA8D17E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Average Price Calculator/AllCoinsTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -11,6 +11,7 @@ import RealmSwift
 import JGProgressHUD
 
 
+
 class AllCoinsTableViewController: UITableViewController{
  
     
@@ -26,7 +27,7 @@ class AllCoinsTableViewController: UITableViewController{
     
     
     @IBOutlet weak var tikerLabel: UILabel!
-    let searchController = UISearchController(searchResultsController: nil)
+   // let searchController = UISearchController(searchResultsController: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +37,7 @@ class AllCoinsTableViewController: UITableViewController{
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        readBuyingArray()
+        readDB()
         
     }
 
@@ -51,7 +52,7 @@ class AllCoinsTableViewController: UITableViewController{
      
     }
 
-    func readBuyingArray() {
+    func readDB() {
         
         allCoins = realm.objects(AllCoinsModel.self)
         tableView.setEditing(false, animated: true)
@@ -63,6 +64,7 @@ class AllCoinsTableViewController: UITableViewController{
         hud.indicatorView = JGProgressHUDImageIndicatorView(image: UIImage(systemName: "wifi.slash")! )
         hud.indicatorView?.tintColor = .systemRed
         hud.textLabel.text = "Отсутсвует подключение к интернету"
+        
         hud.show(in: view)
        
     }
@@ -157,21 +159,5 @@ extension AllCoinsTableViewController {
     
         
     }
-//    func searchCoins(for name: String) {
-//        let url = "https://api.coinlore.net/api/tickers/"
-//        //2
-//        let parameters: [String: String] = ["search": name]
-//        print(parameters)
-//        //3
-//        AF.request(url, parameters: parameters)
-//          .validate()
-//          .responseDecodable(of: AllCoins.self) { response in
-//            //4
-//              guard let coin = response.value else {return}
-//
-//              self.items = coin.data
-//            self.tableView.reloadData()
-//
-//          }
-//    }
+
 
