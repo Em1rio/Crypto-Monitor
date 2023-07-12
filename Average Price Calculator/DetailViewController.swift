@@ -57,6 +57,7 @@ class DetailViewController: UIViewController {
         updateUI()
         getAveragePrice()
         fetchMarketPrice()
+       
         
         // Do any additional setup after loading the view.
     }

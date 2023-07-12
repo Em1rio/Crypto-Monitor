@@ -33,12 +33,7 @@ class ViewController: UIViewController, ViewControllerDelegate {
         }
     }
     @IBOutlet weak var costLabel: UILabel!
-    @IBOutlet weak var quantitiOrPriceLable: UISegmentedControl! {
-        didSet {
-            quantitiOrPriceLable.backgroundColor = UIColor.systemGray5
-        }
-    }
-    
+    @IBOutlet weak var quantitiOrPriceLable: UISegmentedControl! 
     var coinsName = ""
     var coinTiker = ""
     var coinId = ""

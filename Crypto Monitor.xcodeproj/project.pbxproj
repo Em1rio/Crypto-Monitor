@@ -37,7 +37,7 @@
 		A6C5542B7B6EBEEC8C255B39 /* Pods-Average Price Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Average Price Calculator.debug.xcconfig"; path = "Target Support Files/Pods-Average Price Calculator/Pods-Average Price Calculator.debug.xcconfig"; sourceTree = "<group>"; };
 		CEEDCD884A94230F9721E278 /* Pods_Average_Price_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Average_Price_Calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD27F9EC295487B300AD06F7 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
-		FD420F262917C69000536976 /* CryptoKeeping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoKeeping.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD420F262917C69000536976 /* Crypto Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crypto Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD420F292917C69000536976 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD420F2B2917C69000536976 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FD420F2D2917C69000536976 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 		FD420F272917C69000536976 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FD420F262917C69000536976 /* CryptoKeeping.app */,
+				FD420F262917C69000536976 /* Crypto Monitor.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,9 +182,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FD420F252917C69000536976 /* CryptoKeeping */ = {
+		FD420F252917C69000536976 /* Crypto Monitor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FD420F3A2917C69500536976 /* Build configuration list for PBXNativeTarget "CryptoKeeping" */;
+			buildConfigurationList = FD420F3A2917C69500536976 /* Build configuration list for PBXNativeTarget "Crypto Monitor" */;
 			buildPhases = (
 				A84C9C5D058C70324ED2AF79 /* [CP] Check Pods Manifest.lock */,
 				FD420F222917C69000536976 /* Sources */,
@@ -196,9 +196,9 @@
 			);
 			dependencies = (
 			);
-			name = CryptoKeeping;
+			name = "Crypto Monitor";
 			productName = "Average Price Calculator";
-			productReference = FD420F262917C69000536976 /* CryptoKeeping.app */;
+			productReference = FD420F262917C69000536976 /* Crypto Monitor.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -216,7 +216,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FD420F212917C69000536976 /* Build configuration list for PBXProject "CryptoKeeping" */;
+			buildConfigurationList = FD420F212917C69000536976 /* Build configuration list for PBXProject "Crypto Monitor" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -229,7 +229,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FD420F252917C69000536976 /* CryptoKeeping */,
+				FD420F252917C69000536976 /* Crypto Monitor */,
 			);
 		};
 /* End PBXProject section */
@@ -513,7 +513,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FD420F212917C69000536976 /* Build configuration list for PBXProject "CryptoKeeping" */ = {
+		FD420F212917C69000536976 /* Build configuration list for PBXProject "Crypto Monitor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FD420F382917C69500536976 /* Debug */,
@@ -522,7 +522,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FD420F3A2917C69500536976 /* Build configuration list for PBXNativeTarget "CryptoKeeping" */ = {
+		FD420F3A2917C69500536976 /* Build configuration list for PBXNativeTarget "Crypto Monitor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FD420F3B2917C69500536976 /* Debug */,

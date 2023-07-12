@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Volumes/SSD/Development/Average Price Calculator/CryptoKeeping.xcodeproj">
+      location = "group:/Volumes/SSD/Development/Average Price Calculator/Crypto Monitor.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
