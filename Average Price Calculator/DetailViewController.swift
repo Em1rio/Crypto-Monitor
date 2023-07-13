@@ -92,6 +92,7 @@ class DetailViewController: UIViewController {
         let request = AF.request("https://api.coinlore.net/api/ticker/?id=\(coinId)")
         request.responseDecodable(of: Coin.self) { [self] (response) in
             guard let coin = response.value else {return}
+            
             do {
                 priceLabel.text =  "\(coin.first!.priceUsd)"
                 priceLabel.text = priceLabel.text?.replacingOccurrences(of: "Optional(", with: "", options: NSString.CompareOptions.literal, range: nil)
