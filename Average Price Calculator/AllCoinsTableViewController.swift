@@ -52,18 +52,37 @@ class AllCoinsTableViewController: UITableViewController{
             }
      
     }
+    func howOldDB() { //Не подключена
+        let date = Date()
+        let calendar = Calendar.current
+        let dateToCompare = calendar.component(.day , from: date) // всегда актуальная дата
+        if UserDefaults.standard.string(forKey: "lastUpdate") == nil {
+            /*При первом запуске скачается база и зпишется дата установкии ее*/
+            UserDefaults.standard.set(dateToCompare, forKey: "lastUpdate")
+            let day1 = userDefaults.string(forKey: "lastUpdate")
+            print(day1 ?? 0)
+        } else {
+            UserDefaults.standard.set(dateToCompare, forKey: "newDay")
+            let day1 = userDefaults.integer(forKey: "lastUpdate")
+            let day2 = userDefaults.integer(forKey: "newDay")
+            print(day1)
+            print(day2)
+            if day2 != day1  {
+            UserDefaults.standard.set(dateToCompare, forKey: "lastUpdate")
+                print(userDefaults.integer(forKey: "lastUpdate"))
+            fetchCoins()
+            }
+            
+        }
+
+    }
 
     func readDB() {
         
         allCoins = realm.objects(AllCoinsModel.self)
         tableView.setEditing(false, animated: true)
         tableView.reloadData()
-       
-
-        if let storedDate1 = userDefaults.object(forKey: "currentDate") as? Date {
-            print("Current Date" , storedDate1)
-        }
-        
+ 
     }
     func showConnectionAlertHud() {
         let hud = JGProgressHUD()

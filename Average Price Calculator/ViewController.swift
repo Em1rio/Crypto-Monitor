@@ -147,13 +147,13 @@ class ViewController: UIViewController, ViewControllerDelegate {
             self.stillTyping = false
         default:
             break
-      // MARK: - Настроить возврат к дефолтному состоянию после выбора категории
+      
         }
     }
 
    
     @IBAction func numberPressed(_ sender: UIButton) {
-        // MARK: - Решить проблему с точкой и нулями, Возможно сделать больше кнопки, прилизать код
+        // MARK: - Решить проблему с точкой и нулями
 
      
         guard howManyCoinsLabel.text != "." && costLabel.text != "." else {return resetButton(sender)}

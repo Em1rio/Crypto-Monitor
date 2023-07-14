@@ -56,6 +56,7 @@ class ListOfCryptoVC: UIViewController {
     }
     
     func updateBalance() {
+        
         var totalCost: Decimal128 = 0.0
         var totalSpend: Decimal128 = 0.0
         var difference: Decimal128 = 0.0
@@ -66,11 +67,10 @@ class ListOfCryptoVC: UIViewController {
             return objects.count > 0 ? objects : nil
         }
         let array = objects.toArray(ofType: CoinCategory.self)
-
+        
         for item in array {
             var id: String = ""
             id = item._id
-//            let intId = Int(id)
             var priceRightNow: Decimal128 = 0.0
             let request = AF.request("https://api.coinlore.net/api/ticker/?id=\(id)")
             request.responseDecodable(of: Coin.self) { [self] response in
@@ -83,7 +83,7 @@ class ListOfCryptoVC: UIViewController {
                     }
                     let quantity = realmQuery.first?.coinQuantity
                     totalCost += priceRightNow * quantity!
-                    print(FormatterStyle.shared.formatPercentAndAverage(inputValue: "\(totalCost)"))
+                    //print(FormatterStyle.shared.formatPercentAndAverage(inputValue: "\(totalCost)"))
                     displayLabel.text = FormatterStyle.shared.formatCurrency(inputValue: "\(totalCost)")
                     let spendings = realmQuery.first!.totalSpend!
                     totalSpend += spendings

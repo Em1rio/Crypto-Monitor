@@ -12,7 +12,7 @@
         <!--All Coins Table View Controller-->
         <scene sceneID="4U5-FH-rfG">
             <objects>
-                <tableViewController id="m5r-WN-GBI" customClass="AllCoinsTableViewController" customModule="CryptoKeeping" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="m5r-WN-GBI" customClass="AllCoinsTableViewController" customModule="Crypto_Monitor" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="lNF-8q-Zlk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -58,7 +58,7 @@
         <!--Покупка-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ViewController" title="Покупка" id="BYZ-38-t0r" customClass="ViewController" customModule="CryptoKeeping" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" title="Покупка" id="BYZ-38-t0r" customClass="ViewController" customModule="Crypto_Monitor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,7 +74,7 @@
                                     <action selector="SellOrBuy:" destination="BYZ-38-t0r" eventType="valueChanged" id="IUq-hf-KZs"/>
                                 </connections>
                             </segmentedControl>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M68-Tf-JFe" customClass="MyCustomView" customModule="CryptoKeeping" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M68-Tf-JFe" customClass="MyCustomView" customModule="Crypto_Monitor" customModuleProvider="target">
                                 <rect key="frame" x="42" y="78" width="291" height="78"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wst-mS-vSj">
@@ -295,7 +295,7 @@
                                     <constraint firstItem="Itu-kp-1bY" firstAttribute="top" secondItem="5gl-4z-H6h" secondAttribute="top" constant="1" id="bdG-GX-hOP"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oZk-CB-xJr" userLabel="Category" customClass="MyCustomView" customModule="CryptoKeeping" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oZk-CB-xJr" userLabel="Category" customClass="MyCustomView" customModule="Crypto_Monitor" customModuleProvider="target">
                                 <rect key="frame" x="33.5" y="535" width="308" height="122"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="sdF-SY-thh" userLabel="кнопки категорий">
@@ -497,7 +497,7 @@
         <!--Все криптовалюты-->
         <scene sceneID="Qub-S7-dtI">
             <objects>
-                <viewController id="krO-XO-egv" customClass="ListOfCryptoVC" customModule="CryptoKeeping" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="krO-XO-egv" customClass="ListOfCryptoVC" customModule="Crypto_Monitor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1o5-ie-Tl5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -509,7 +509,7 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="OcE-Vl-wGu" detailTextLabel="mZF-Op-7cb" style="IBUITableViewCellStyleSubtitle" id="PW3-yR-XvA">
                                         <rect key="frame" x="0.0" y="50" width="375" height="66.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PW3-yR-XvA" id="tEd-WA-Ze9" customClass="ListOfTableViewCell" customModule="CryptoKeeping" customModuleProvider="target">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PW3-yR-XvA" id="tEd-WA-Ze9" customClass="ListOfTableViewCell" customModule="Crypto_Monitor" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="348.5" height="66.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -558,12 +558,11 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Rq-XU-YmF">
                                 <rect key="frame" x="111" y="54" width="153" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="alH-FF-5RI"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="498-ma-xOO" firstAttribute="top" secondItem="alH-FF-5RI" secondAttribute="top" constant="93" id="9rX-Z4-z0k"/>
                             <constraint firstAttribute="bottom" secondItem="498-ma-xOO" secondAttribute="bottom" id="Ebh-ll-P7E"/>
@@ -592,12 +591,12 @@
         <!--Detail View Controller-->
         <scene sceneID="cz9-qe-k3Z">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="1XH-KX-MSd" customClass="DetailViewController" customModule="CryptoKeeping" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="1XH-KX-MSd" customClass="DetailViewController" customModule="Crypto_Monitor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ONh-a0-shL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uaP-Lf-s8s" customClass="MyCustomView" customModule="CryptoKeeping" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uaP-Lf-s8s" customClass="MyCustomView" customModule="Crypto_Monitor" customModuleProvider="target">
                                 <rect key="frame" x="10" y="54" width="355" height="232.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bitcoin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYB-bE-Qra">
@@ -679,8 +678,6 @@
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="5Ha-Gb-8qt" secondAttribute="bottom" id="IXj-0E-fl8"/>
-                                            <constraint firstItem="5Ha-Gb-8qt" firstAttribute="leading" secondItem="S2x-hh-SLC" secondAttribute="leading" id="RnW-6n-0VD"/>
-                                            <constraint firstItem="5Ha-Gb-8qt" firstAttribute="top" secondItem="S2x-hh-SLC" secondAttribute="top" id="riT-NJ-LpL"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="76X-f9-Iih" userLabel="Рыночная">
@@ -804,7 +801,7 @@
                                 <rect key="frame" x="0.0" y="306.5" width="375" height="360.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" indentationWidth="10" reuseIdentifier="detailCell" rowHeight="50" id="9en-cH-Ndt" customClass="DetailTableViewCell" customModule="CryptoKeeping" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" indentationWidth="10" reuseIdentifier="detailCell" rowHeight="50" id="9en-cH-Ndt" customClass="DetailTableViewCell" customModule="Crypto_Monitor" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9en-cH-Ndt" id="lD2-Eo-RSS">
@@ -919,18 +916,6 @@
                                                             </constraints>
                                                         </stackView>
                                                     </subviews>
-                                                    <constraints>
-                                                        <constraint firstItem="zB4-kj-B8t" firstAttribute="leading" secondItem="O5g-np-HAg" secondAttribute="leading" id="03j-hD-5RA"/>
-                                                        <constraint firstAttribute="bottom" secondItem="WGF-Gu-alo" secondAttribute="bottom" id="1Yl-Bz-dg8"/>
-                                                        <constraint firstItem="ZZg-Wz-Js4" firstAttribute="top" secondItem="O5g-np-HAg" secondAttribute="top" id="8Fm-ge-5B1"/>
-                                                        <constraint firstItem="b0l-Eq-aeB" firstAttribute="top" secondItem="O5g-np-HAg" secondAttribute="top" id="Fk4-AX-vZa"/>
-                                                        <constraint firstItem="WGF-Gu-alo" firstAttribute="top" secondItem="O5g-np-HAg" secondAttribute="top" id="MKR-Gq-pnD"/>
-                                                        <constraint firstAttribute="bottom" secondItem="b0l-Eq-aeB" secondAttribute="bottom" id="SlD-sq-pdW"/>
-                                                        <constraint firstAttribute="bottom" secondItem="ZZg-Wz-Js4" secondAttribute="bottom" id="Vfp-3u-dVt"/>
-                                                        <constraint firstItem="zB4-kj-B8t" firstAttribute="top" secondItem="O5g-np-HAg" secondAttribute="top" id="cxM-XX-Z2O"/>
-                                                        <constraint firstAttribute="trailing" secondItem="WGF-Gu-alo" secondAttribute="trailing" id="mqK-F5-vch"/>
-                                                        <constraint firstAttribute="bottom" secondItem="zB4-kj-B8t" secondAttribute="bottom" id="uCo-VE-agx"/>
-                                                    </constraints>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
