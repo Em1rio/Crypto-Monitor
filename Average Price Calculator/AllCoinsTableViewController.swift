@@ -21,6 +21,7 @@ class AllCoinsTableViewController: UITableViewController{
     var coins: [Datum] = []
     let realm = try! Realm()
     lazy var allCoins: Results<AllCoinsModel> = {self.realm.objects(AllCoinsModel.self)} ()
+    let userDefaults = UserDefaults()
 
     weak var delegate: ViewControllerDelegate?
     
@@ -57,6 +58,11 @@ class AllCoinsTableViewController: UITableViewController{
         allCoins = realm.objects(AllCoinsModel.self)
         tableView.setEditing(false, animated: true)
         tableView.reloadData()
+       
+
+        if let storedDate1 = userDefaults.object(forKey: "currentDate") as? Date {
+            print("Current Date" , storedDate1)
+        }
         
     }
     func showConnectionAlertHud() {
@@ -127,16 +133,23 @@ class AllCoinsTableViewController: UITableViewController{
 
 extension AllCoinsTableViewController {
     func fetchCoins() {
-        
-        AF.request("https://api.coinlore.net/api/tickers/")
-            .validate()
-            .responseDecodable(of: AllCoins.self) { (response) in
-        guard let coin = response.value else { return }
-        self.coins = coin.data
-        self.items = coin.data
-        self.loadDataToRealm(allCoins: self.coins)
-        self.tableView.reloadData()
+        let hud = JGProgressHUD()
+        hud.textLabel.text = "Загрузка"
+        hud.show(in: self.view)
+        let queue = DispatchQueue.global(qos: .utility)
+        queue.async {
+            AF.request("https://api.coinlore.net/api/tickers/")
+                .validate()
+                .responseDecodable(of: AllCoins.self) { (response) in
+            guard let coin = response.value else { return }
+            self.coins = coin.data
+            self.items = coin.data
+            self.loadDataToRealm(allCoins: self.coins)
+            self.tableView.reloadData()
+            hud.dismiss()
         }
+        }
+        
     }
     func loadDataToRealm(allCoins: [Datum]) {
         let countedData = coins.count
