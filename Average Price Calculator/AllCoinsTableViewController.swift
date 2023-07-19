@@ -32,7 +32,7 @@ class AllCoinsTableViewController: UITableViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        howOldDB()
         loadData()
 
     }
@@ -53,27 +53,67 @@ class AllCoinsTableViewController: UITableViewController{
      
     }
     func howOldDB() { //Не подключена
+        /*
+            Надо проверить есть ли соединение прежде чем все это начинать и проверить что происзодит если загрузка началась и экран закрыли
+            Надо убрать индикатор загрухки, чтобы обновление происходило без него или же сделать какое то другое оповещение что данные обновлены
+            Надо сделать больше интервал для обновления
+         */
         let date = Date()
         let calendar = Calendar.current
-        let dateToCompare = calendar.component(.day , from: date) // всегда актуальная дата
-        if UserDefaults.standard.string(forKey: "lastUpdate") == nil {
-            /*При первом запуске скачается база и зпишется дата установкии ее*/
-            UserDefaults.standard.set(dateToCompare, forKey: "lastUpdate")
-            let day1 = userDefaults.string(forKey: "lastUpdate")
-            print(day1 ?? 0)
+       // let dateToCompare = calendar.dateComponents([.day, .month, .year],  from: date) // всегда актуальная дата
+        
+        //print(" ДАТА \(dateToCompare)")
+        if UserDefaults.standard.object(forKey: "lastUpdate") as? Date == nil {
+            //save as Date
+            UserDefaults.standard.set(date, forKey: "lastUpdate")
+
+            //read
+            let date1 = UserDefaults.standard.object(forKey: "lastUpdate") as! Date
+            let df = DateFormatter()
+            df.dateFormat = "dd/MM/yyyy"
+            print("first date\(df.string(from: date))")
         } else {
-            UserDefaults.standard.set(dateToCompare, forKey: "newDay")
-            let day1 = userDefaults.integer(forKey: "lastUpdate")
-            let day2 = userDefaults.integer(forKey: "newDay")
-            print(day1)
-            print(day2)
-            if day2 != day1  {
-            UserDefaults.standard.set(dateToCompare, forKey: "lastUpdate")
-                print(userDefaults.integer(forKey: "lastUpdate"))
-            fetchCoins()
-            }
+            //save as Date
+            UserDefaults.standard.set(date, forKey: "NewDate")
+
+            //read
+            let date2 = UserDefaults.standard.object(forKey: "NewDate") as! Date
+            let df = DateFormatter()
+            df.dateFormat = "dd/MM/yyyy"
+            print("new date\(df.string(from: date))")
+            
+            //update
+            let oldDate = UserDefaults.standard.object(forKey: "lastUpdate") as! Date
+            
+            print("old date\(df.string(from: oldDate))")
             
         }
+        
+        
+        
+        
+        
+        //let delta = fromDate.distance(to: toDate)
+        
+//        if UserDefaults.standard.string(forKey: "lastUpdate") == nil {
+//            /*При первом запуске скачается база и зпишется дата установкии ее*/
+//
+//            UserDefaults.standard.set(dateToCompare.date, forKey: "lastUpdate")
+//            let day1 = userDefaults.string(forKey: "lastUpdate")
+//            print(day1)
+//        } else {
+//            UserDefaults.standard.set(dateToCompare, forKey: "newDay")
+//            let day1 = userDefaults.integer(forKey: "lastUpdate")
+//            let day2 = userDefaults.integer(forKey: "newDay")
+//            print(day1)
+//            print(day2)
+//            if day2 != day1  {
+//            UserDefaults.standard.set(dateToCompare, forKey: "lastUpdate")
+//                print(userDefaults.integer(forKey: "lastUpdate"))
+//            fetchCoins()
+//            }
+//
+//        }
 
     }
 
@@ -82,6 +122,7 @@ class AllCoinsTableViewController: UITableViewController{
         allCoins = realm.objects(AllCoinsModel.self)
         tableView.setEditing(false, animated: true)
         tableView.reloadData()
+        
  
     }
     func showConnectionAlertHud() {
