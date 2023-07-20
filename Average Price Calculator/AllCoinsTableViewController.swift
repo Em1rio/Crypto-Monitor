@@ -52,69 +52,22 @@ class AllCoinsTableViewController: UITableViewController{
             }
      
     }
-    func howOldDB() { //Не подключена
-        /*
-            Надо проверить есть ли соединение прежде чем все это начинать и проверить что происзодит если загрузка началась и экран закрыли
-            Надо убрать индикатор загрухки, чтобы обновление происходило без него или же сделать какое то другое оповещение что данные обновлены
-            Надо сделать больше интервал для обновления
-         */
+    func howOldDB() {
+        guard NetworkMonitor.shared.isConnected == true else {return}
         let date = Date()
-        let calendar = Calendar.current
-       // let dateToCompare = calendar.dateComponents([.day, .month, .year],  from: date) // всегда актуальная дата
-        
-        //print(" ДАТА \(dateToCompare)")
         if UserDefaults.standard.object(forKey: "lastUpdate") as? Date == nil {
-            //save as Date
+            //save
             UserDefaults.standard.set(date, forKey: "lastUpdate")
-
-            //read
-            let date1 = UserDefaults.standard.object(forKey: "lastUpdate") as! Date
-            let df = DateFormatter()
-            df.dateFormat = "dd/MM/yyyy"
-            print("first date\(df.string(from: date))")
         } else {
-            //save as Date
-            UserDefaults.standard.set(date, forKey: "NewDate")
-
-            //read
-            let date2 = UserDefaults.standard.object(forKey: "NewDate") as! Date
-            let df = DateFormatter()
-            df.dateFormat = "dd/MM/yyyy"
-            print("new date\(df.string(from: date))")
-            
-            //update
-            let oldDate = UserDefaults.standard.object(forKey: "lastUpdate") as! Date
-            
-            print("old date\(df.string(from: oldDate))")
-            
+            // read
+            let lastUpdate = UserDefaults.standard.object(forKey: "lastUpdate") as! Date
+            let timeInterval = date.timeIntervalSince(lastUpdate) / 86400
+            // update
+            if timeInterval >= 14 {
+                UserDefaults.standard.set(date, forKey: "lastUpdate")
+                fetchCoins()
+            }
         }
-        
-        
-        
-        
-        
-        //let delta = fromDate.distance(to: toDate)
-        
-//        if UserDefaults.standard.string(forKey: "lastUpdate") == nil {
-//            /*При первом запуске скачается база и зпишется дата установкии ее*/
-//
-//            UserDefaults.standard.set(dateToCompare.date, forKey: "lastUpdate")
-//            let day1 = userDefaults.string(forKey: "lastUpdate")
-//            print(day1)
-//        } else {
-//            UserDefaults.standard.set(dateToCompare, forKey: "newDay")
-//            let day1 = userDefaults.integer(forKey: "lastUpdate")
-//            let day2 = userDefaults.integer(forKey: "newDay")
-//            print(day1)
-//            print(day2)
-//            if day2 != day1  {
-//            UserDefaults.standard.set(dateToCompare, forKey: "lastUpdate")
-//                print(userDefaults.integer(forKey: "lastUpdate"))
-//            fetchCoins()
-//            }
-//
-//        }
-
     }
 
     func readDB() {
@@ -193,6 +146,7 @@ class AllCoinsTableViewController: UITableViewController{
 
 extension AllCoinsTableViewController {
     func fetchCoins() {
+        guard NetworkMonitor.shared.isConnected == true else {return}
         let hud = JGProgressHUD()
         hud.textLabel.text = "Загрузка"
         hud.show(in: self.view)
@@ -201,15 +155,14 @@ extension AllCoinsTableViewController {
             AF.request("https://api.coinlore.net/api/tickers/")
                 .validate()
                 .responseDecodable(of: AllCoins.self) { (response) in
-            guard let coin = response.value else { return }
-            self.coins = coin.data
-            self.items = coin.data
-            self.loadDataToRealm(allCoins: self.coins)
-            self.tableView.reloadData()
-            hud.dismiss()
+                    guard let coin = response.value else { return }
+                    self.coins = coin.data
+                    self.items = coin.data
+                    self.loadDataToRealm(allCoins: self.coins)
+                    self.tableView.reloadData()
+                    hud.dismiss()
+                }
         }
-        }
-        
     }
     func loadDataToRealm(allCoins: [Datum]) {
         let countedData = coins.count
@@ -218,19 +171,13 @@ extension AllCoinsTableViewController {
             newData.id = coins[item].id
             newData.symbol = coins[item].symbol
             newData.name = coins[item].name
-
+            
             try! realm.write {
                 realm.add(newData, update: .all)
             }
         }
     }
-        
-       
     
-        
-        
-    
-        
-    }
+}
 
 
