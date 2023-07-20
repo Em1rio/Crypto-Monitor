@@ -135,21 +135,12 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: DetailTableViewCell = tableView.dequeueReusableCell(withIdentifier: "detailCell", for: indexPath) as! DetailTableViewCell
-        
-//        if ((indexPath.row % 2) != 0) {
-//            cell.backgroundColor = UIColor.white
-//        }else {
-//            cell.backgroundColor = UIColor.systemGray5
-//        }
         let dbQuery = realm.objects(EveryBuying.self)
                 let realmQuery = dbQuery.where {
                     $0.coin == nameLabel.text!
                 }
         let coin = realmQuery[indexPath.row]
         let neededDate = coin.date.getFormattedDate(format: "dd/MM/yyyy")
-        
-
-        
         cell.transactionLabel.text = "\(coin.transaction):"
         cell.quantityCellLabel.text = "\(FormatterStyle.shared.format(inputValue: "\(coin.quantity!)"))"
         cell.priceCellLabel.text = "\(FormatterStyle.shared.formatCurrency(inputValue: "\(coin.price!)"))"

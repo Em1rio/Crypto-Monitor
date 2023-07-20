@@ -11,7 +11,7 @@ import Network
 final class NetworkMonitor {
     static let shared = NetworkMonitor()
     
-    private let queue = DispatchQueue.global()
+    private let queue = DispatchQueue.global(qos: .background)
     private let monitor: NWPathMonitor
     
     public var isConnected: Bool = false

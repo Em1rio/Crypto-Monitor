@@ -27,31 +27,66 @@ class AllCoinsTableViewController: UITableViewController{
     
     
     
-    @IBOutlet weak var tikerLabel: UILabel!
+    //@IBOutlet weak var tikerLabel: UILabel!
    // let searchController = UISearchController(searchResultsController: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        howOldDB()
-        loadData()
 
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        
+        howOldDB()
+        loadData()
         readDB()
         
     }
 
-    func loadData() {
-        guard allCoins.isEmpty == true else {return}
-            if NetworkMonitor.shared.isConnected {
-                fetchCoins()
-            } else {
-                showConnectionAlertHud()
-
-            }
-     
+    // MARK: - Table view data source
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if allCoins.isEmpty {
+            return items.count    }
+        else {
+            return allCoins.count
+        }
     }
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "dataCell", for: indexPath)
+        if allCoins.isEmpty {
+            let item = items[indexPath.row]
+            cell.textLabel?.text = item.nameLabelText
+            cell.detailTextLabel?.text = item.symbolLabelText
+        } else {
+            let item = allCoins[indexPath.row]
+            cell.textLabel?.text = item.name
+            cell.detailTextLabel?.text = item.symbol
+        }
+        return cell
+    }
+    override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        if allCoins.isEmpty {
+            selectedItem = items[indexPath.row]
+        } else {
+            selectedItemOffline = allCoins[indexPath.row]
+        }
+        return indexPath
+    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        if allCoins.isEmpty {
+            delegate?.update(text: "\(selectedItem!.nameLabelText)", text2: "\( selectedItem!.symbolLabelText)", text3: "\(selectedItem!.id)")
+        } else {
+            delegate?.update(text: "\(selectedItemOffline!.name)", text2: "\( selectedItemOffline!.symbol)", text3: "\(selectedItemOffline!.id)")
+        }
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.success)
+        self.dismiss(animated: true)
+    }
+}
+
+extension AllCoinsTableViewController {
     func howOldDB() {
         guard NetworkMonitor.shared.isConnected == true else {return}
         let date = Date()
@@ -69,82 +104,23 @@ class AllCoinsTableViewController: UITableViewController{
             }
         }
     }
-
+    
+    func loadData() {
+        guard allCoins.isEmpty == true else {return}
+            if NetworkMonitor.shared.isConnected {
+                fetchCoins()
+            } else {
+                showConnectionAlertHud()
+            }
+    }
+    
     func readDB() {
         
         allCoins = realm.objects(AllCoinsModel.self)
         tableView.setEditing(false, animated: true)
         tableView.reloadData()
-        
- 
-    }
-    func showConnectionAlertHud() {
-        let hud = JGProgressHUD()
-        hud.indicatorView = JGProgressHUDImageIndicatorView(image: UIImage(systemName: "wifi.slash")! )
-        hud.indicatorView?.tintColor = .systemRed
-        hud.textLabel.text = "Отсутсвует подключение к интернету"
-        
-        hud.show(in: view)
-       
-    }
-    // MARK: - Table view data source
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if allCoins.isEmpty {
-            return items.count    }
-        else {
-            return allCoins.count
-        }
-        
-    }
-
-   
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "dataCell", for: indexPath)
-       
-        if allCoins.isEmpty {
-            let item = items[indexPath.row]
-            cell.textLabel?.text = item.nameLabelText
-            cell.detailTextLabel?.text = item.symbolLabelText
-        } else {
-            let item = allCoins[indexPath.row]
-            cell.textLabel?.text = item.name
-            cell.detailTextLabel?.text = item.symbol
-        }
-
-        return cell
     }
     
-    override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
-        if allCoins.isEmpty {
-            selectedItem = items[indexPath.row]
-        } else {
-            selectedItemOffline = allCoins[indexPath.row]
-        }
-        
-        return indexPath
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true) //дл] того чтобы выбор был анимирован
-        if allCoins.isEmpty {
-            delegate?.update(text: "\(selectedItem!.nameLabelText)", text2: "\( selectedItem!.symbolLabelText)", text3: "\(selectedItem!.id)")
-        } else {
-            delegate?.update(text: "\(selectedItemOffline!.name)", text2: "\( selectedItemOffline!.symbol)", text3: "\(selectedItemOffline!.id)")
-        }
-        
-        let generator = UINotificationFeedbackGenerator()
-        generator.notificationOccurred(.success)
-       
-        self.dismiss(animated: true)
-        
-    }
-
-}
-
-
-
-extension AllCoinsTableViewController {
     func fetchCoins() {
         guard NetworkMonitor.shared.isConnected == true else {return}
         let hud = JGProgressHUD()
@@ -164,6 +140,7 @@ extension AllCoinsTableViewController {
                 }
         }
     }
+    
     func loadDataToRealm(allCoins: [Datum]) {
         let countedData = coins.count
         for item in 0...countedData-1 {
@@ -178,6 +155,13 @@ extension AllCoinsTableViewController {
         }
     }
     
+    func showConnectionAlertHud() {
+        let hud = JGProgressHUD()
+        hud.indicatorView = JGProgressHUDImageIndicatorView(image: UIImage(systemName: "wifi.slash")! )
+        hud.indicatorView?.tintColor = .systemRed
+        hud.textLabel.text = "Отсутсвует подключение к интернету"
+        hud.show(in: view)
+    }
 }
 
 

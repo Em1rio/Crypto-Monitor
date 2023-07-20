@@ -76,6 +76,8 @@ class ViewController: UIViewController, ViewControllerDelegate {
         } else {
             SellCategoryToBD()
         }
+        quantitiOrPriceLable.selectedSegmentIndex = 0
+        coinsOrCostTyping(quantitiOrPriceLable as Any)
         showSuccessHud()
 
        
@@ -98,7 +100,6 @@ class ViewController: UIViewController, ViewControllerDelegate {
     
     }// end ViewDidLoad
     
-    //MARK: - Это должно быть во вью отдельном?
    
     @IBAction func SellOrBuy(_ sender: UISegmentedControl) {
         switch (sender as AnyObject).selectedSegmentIndex {
@@ -158,7 +159,7 @@ class ViewController: UIViewController, ViewControllerDelegate {
      
         guard howManyCoinsLabel.text != "." && costLabel.text != "." else {return resetButton(sender)}
         guard howManyCoinsLabel.text != "00" && costLabel.text != "00" else {return resetButton(sender)}
-
+        
         if segmentControlIsOn == false {
             let number = sender.currentTitle!
             if number == "0.00" && howManyCoinsLabel.text == "0.00" {
