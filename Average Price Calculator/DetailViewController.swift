@@ -21,7 +21,8 @@ class DetailViewController: UIViewController {
     // var oneCoinData: Coin = []
     let realm = try! Realm()
     lazy var buyingArray: Results<CoinCategory> = {self.realm.objects(CoinCategory.self)} ()
-    var coins: List<EveryBuying>!
+    var coins: List<EveryBuying>?
+    var item: EveryBuying?
     
 
     
@@ -155,7 +156,27 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
        tableView.deselectRow(at: indexPath, animated: true) //дл] того чтобы выбор был анимирован
         
    }
-  
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath)
+            -> UISwipeActionsConfiguration? {
+            let deleteAction = UIContextualAction(style: .destructive, title: nil) { (_, _, completionHandler) in
+                let dbQuery = self.realm.objects(EveryBuying.self)
+                        let realmQuery = dbQuery.where {
+                            $0.coin == self.nameLabel.text!
+                        }
+                let coin = realmQuery[indexPath.row]
+                
+                    try! self.realm.write {
+                        self.realm.delete(coin)
+                    }
+                    tableView.reloadData()
+                
+                completionHandler(true)
+            }
+            deleteAction.image = UIImage(systemName: "trash")
+            deleteAction.backgroundColor = .systemRed
+            let configuration = UISwipeActionsConfiguration(actions: [deleteAction])
+            return configuration
+    }
     
     
 }
