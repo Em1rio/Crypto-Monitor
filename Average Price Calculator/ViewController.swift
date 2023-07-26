@@ -23,7 +23,7 @@ class ViewController: UIViewController, ViewControllerDelegate {
     lazy var coinArrayCategory: Results<CoinCategory> = {self.realm.objects(CoinCategory.self)} ()
     var coins: List<EveryBuying>!
  
-//    @IBOutlet weak var segmentedControlLable: UISegmentedControl! // Не используется?
+
     @IBOutlet weak var howManyCoinsLabel: UILabel!
     @IBOutlet var Keyboard: [UIButton]!{
         didSet{

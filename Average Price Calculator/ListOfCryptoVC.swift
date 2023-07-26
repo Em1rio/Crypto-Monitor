@@ -66,9 +66,9 @@ class ListOfCryptoVC: UIViewController {
 
             return objects.count > 0 ? objects : nil
         }
-        let array = objects.toArray(ofType: CoinCategory.self)
+        let listOfCrypto = objects.toArray(ofType: CoinCategory.self)
         
-        for item in array {
+        for item in listOfCrypto {
             var id: String = ""
             id = item._id
             var priceRightNow: Decimal128 = 0.0

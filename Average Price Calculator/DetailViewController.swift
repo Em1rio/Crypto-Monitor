@@ -126,21 +126,13 @@ class DetailViewController: UIViewController {
 extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let dbCoins = realm.objects(EveryBuying.self)
-        let realmQuery = dbCoins.where { //дает доступ ко всему рилму и к его всем элементам
-            $0.coin == nameLabel.text!
-        }
         
-        return realmQuery.count
+        return DBRealmManager.shared.getRealmQueryEB(nameLabel: nameLabel.text!).count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: DetailTableViewCell = tableView.dequeueReusableCell(withIdentifier: "detailCell", for: indexPath) as! DetailTableViewCell
-        let dbQuery = realm.objects(EveryBuying.self)
-                let realmQuery = dbQuery.where {
-                    $0.coin == nameLabel.text!
-                }
-        let coin = realmQuery[indexPath.row]
+        let coin = DBRealmManager.shared.getRealmQueryEB(nameLabel: nameLabel.text!)[indexPath.row]
         let neededDate = coin.date.getFormattedDate(format: "dd/MM/yyyy")
         cell.transactionLabel.text = "\(coin.transaction):"
         cell.quantityCellLabel.text = "\(FormatterStyle.shared.format(inputValue: "\(coin.quantity!)"))"
@@ -153,22 +145,24 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
         return 60
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       tableView.deselectRow(at: indexPath, animated: true) //дл] того чтобы выбор был анимирован
+       tableView.deselectRow(at: indexPath, animated: true) //для того чтобы выбор был анимирован
         
    }
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath)
             -> UISwipeActionsConfiguration? {
-            let deleteAction = UIContextualAction(style: .destructive, title: nil) { (_, _, completionHandler) in
-                let dbQuery = self.realm.objects(EveryBuying.self)
-                        let realmQuery = dbQuery.where {
-                            $0.coin == self.nameLabel.text!
-                        }
-                let coin = realmQuery[indexPath.row]
+                let deleteAction = UIContextualAction(style: .destructive, title: nil) { [self] (_, _, completionHandler) in
+                let coin = DBRealmManager.shared.getRealmQueryEB(nameLabel: self.nameLabel.text!)[indexPath.row]
                 
                     try! self.realm.write {
                         self.realm.delete(coin)
                     }
                     tableView.reloadData()
+                    /*
+                     Получаем доступ к Категории монет, сравниваем имя монеты
+                     Отнимаем количество
+                     Отнимаем сумму
+                     Обновляем категорию
+                     */
                 
                 completionHandler(true)
             }
