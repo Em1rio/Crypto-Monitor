@@ -115,6 +115,7 @@ class ListOfCryptoVC: UIViewController {
                 destVC.nameFromList = categoryPressed.symbol
                 destVC.totalFromList = categoryPressed.coinQuantity!
                 destVC.fullNameFromList = categoryPressed.nameCoin
+                destVC.idFromList = categoryPressed._id
                 
             }
         }

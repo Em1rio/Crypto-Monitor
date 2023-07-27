@@ -13,16 +13,16 @@ import Alamofire
 
 class DetailViewController: UIViewController {
     
-    var nameFromList: String?
+    var nameFromList: String = ""
     var totalFromList: Decimal128 = 0.0
-    var fullNameFromList: String?
+    var fullNameFromList: String = ""
+    var idFromList: String = ""
     var items: [Displayable] = []
     var jsonData: [Coin] = []
-    // var oneCoinData: Coin = []
     let realm = try! Realm()
     lazy var buyingArray: Results<CoinCategory> = {self.realm.objects(CoinCategory.self)} ()
     var coins: List<EveryBuying>?
-    var item: EveryBuying?
+    //var item: EveryBuying?
     
 
     
@@ -43,10 +43,10 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var priceChange24: UILabel!
     
     @IBOutlet weak var priceChange: UILabel!
-    func updateUI(){
+    func updateUI(balance: String) {
         symbolLabel.text = nameFromList
         nameLabel.text = fullNameFromList
-        balanceLabel.text = "\(FormatterStyle.shared.format(inputValue: "\(totalFromList)"))"
+        balanceLabel.text = "\(balance)"
 
         
         
@@ -55,7 +55,7 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateUI()
+        updateUI(balance: "\(FormatterStyle.shared.format(inputValue: "\(totalFromList)"))")
         getAveragePrice()
         fetchMarketPrice()
        
@@ -152,19 +152,35 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
             -> UISwipeActionsConfiguration? {
                 let deleteAction = UIContextualAction(style: .destructive, title: nil) { [self] (_, _, completionHandler) in
                 let coin = DBRealmManager.shared.getRealmQueryEB(nameLabel: self.nameLabel.text!)[indexPath.row]
-                
+                    let category = CoinCategory()
+                    //let dbCoins = realm.objects(CoinCategory.self)
+                    let realmQuery = DBRealmManager.shared.getRealmQueryCoinCat(value: nameLabel.text!)
+                    if coin.transaction == "Продано" {
+                        category.coinQuantity = (realmQuery.first?.coinQuantity ?? 0.0 ) + coin.quantity!
+                        category.totalSpend = (realmQuery.first?.totalSpend)! + (coin.quantity! * coin.price!)
+                        category._id = "\(idFromList)"
+                        category.nameCoin = "\(fullNameFromList)"
+                        category.symbol = "\(nameFromList)"
+                    } else {
+                        category.coinQuantity = (realmQuery.first?.coinQuantity ?? 0.0 ) - coin.quantity!
+                        print("coinQuantity update\(coin.quantity as Any)")
+                        category.totalSpend = (realmQuery.first?.totalSpend)! - (coin.quantity! * coin.price!)
+                        print("total spend update\(category.totalSpend as Any)")
+                        category._id = "\(idFromList)"
+                        category.nameCoin = "\(fullNameFromList)"
+                        category.symbol = "\(nameFromList)"
+                    }
+                    
+                    
                     try! self.realm.write {
                         self.realm.delete(coin)
+                        self.realm.add(category, update: .all)
                     }
+                    updateUI(balance: "\(category.coinQuantity!)")
+                    getAveragePrice()
+                    fetchMarketPrice()
                     tableView.reloadData()
-                    /*
-                     Получаем доступ к Категории монет, сравниваем имя монеты
-                     Отнимаем количество
-                     Отнимаем сумму
-                     Обновляем категорию
-                     */
-                
-                completionHandler(true)
+                    completionHandler(true)
             }
             deleteAction.image = UIImage(systemName: "trash")
             deleteAction.backgroundColor = .systemRed

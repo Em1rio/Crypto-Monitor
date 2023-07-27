@@ -66,6 +66,7 @@ class ViewController: UIViewController, ViewControllerDelegate {
         }
     
     func update(text: String, text2: String, text3: String) {
+        guard stillTyping != false else {return}
         nameFromAll = text
         symbolFromAll = text2
         coinId = text3
@@ -73,24 +74,43 @@ class ViewController: UIViewController, ViewControllerDelegate {
         coinTiker = symbolFromAll
         if sellOrBuyMode == false {
             BuyCategoryToDB()
+            quantitiOrPriceLable.selectedSegmentIndex = 0
+            coinsOrCostTyping(quantitiOrPriceLable as Any)
+            showHud(status: "success")
         } else {
             SellCategoryToBD()
+            quantitiOrPriceLable.selectedSegmentIndex = 0
+            coinsOrCostTyping(quantitiOrPriceLable as Any)
+            showHud(status: "failure")
         }
-        quantitiOrPriceLable.selectedSegmentIndex = 0
-        coinsOrCostTyping(quantitiOrPriceLable as Any)
-        showSuccessHud()
+
 
        
         
     }
-    func showSuccessHud() {
-        let hud = JGProgressHUD()
-        hud.indicatorView = JGProgressHUDSuccessIndicatorView()
-        hud.indicatorView?.tintColor = .systemGreen
-       
-        hud.show(in: view)
-        hud.dismiss(afterDelay: 0.6)
+    func showHud(status: String) {
+        switch status {
+        case "success":
+            let hud = JGProgressHUD()
+            hud.indicatorView = JGProgressHUDSuccessIndicatorView()
+            hud.indicatorView?.tintColor = .systemGreen
+           
+            hud.show(in: view)
+            hud.dismiss(afterDelay: 0.6)
+        case "failure":
+            let hud = JGProgressHUD()
+            hud.indicatorView = JGProgressHUDErrorIndicatorView()
+            hud.hudView.backgroundColor = .systemGray
+            hud.show(in: view)
+            hud.dismiss(afterDelay: 0.6)
+        default:
+            break
+        }
     }
+
+
+
+    
     // MARK: - Lifecycle
     override func viewDidLoad() {
      super.viewDidLoad()
@@ -155,8 +175,6 @@ class ViewController: UIViewController, ViewControllerDelegate {
    
     @IBAction func numberPressed(_ sender: UIButton) {
         // MARK: - Решить проблему с точкой и нулями
-
-     
         guard howManyCoinsLabel.text != "." && costLabel.text != "." else {return resetButton(sender)}
         guard howManyCoinsLabel.text != "00" && costLabel.text != "00" else {return resetButton(sender)}
         
@@ -209,7 +227,7 @@ class ViewController: UIViewController, ViewControllerDelegate {
     }
     
     @IBAction func categoryPressed(_ sender: UIButton) {
-       
+        guard stillTyping != false else {return}
         //настраиваем параметры
         let generator = UINotificationFeedbackGenerator() //Тактильная отдача при нажатии
         generator.notificationOccurred(.success)
@@ -249,12 +267,14 @@ class ViewController: UIViewController, ViewControllerDelegate {
         }
         if sellOrBuyMode == false {
             BuyCategoryToDB()
+            quantitiOrPriceLable.selectedSegmentIndex = 0
+            coinsOrCostTyping(quantitiOrPriceLable as Any)
+            showHud(status: "success")
         } else {
             SellCategoryToBD()
+            showHud(status: "failure")
         }
-        quantitiOrPriceLable.selectedSegmentIndex = 0
-        coinsOrCostTyping(quantitiOrPriceLable as Any)
-        showSuccessHud()
+
         
 
     }
@@ -262,6 +282,8 @@ class ViewController: UIViewController, ViewControllerDelegate {
     func SellCategoryToBD () {
         guard howManyCoinsLabel.text != "." && costLabel.text != "." else {return}
         guard howManyCoinsLabel.text != "00" && costLabel.text != "00" else {return}
+        let parentCategory = CoinCategory()
+        guard parentCategory._id == coinId else {return }
         
         howManyValue = Decimal128(floatLiteral: Double(howManyCoinsLabel.text!)!)
         costValue = Decimal128(floatLiteral: Double(costLabel.text!)!)
@@ -271,10 +293,10 @@ class ViewController: UIViewController, ViewControllerDelegate {
         
 
         let value = EveryBuying(value: ["\(coinsName)", transaction, howManyValue, costValue])
-        let parentCategory = CoinCategory()
+       
         parentCategory._id = "\(coinId)"
         parentCategory.symbol = "\(coinTiker)"
-        parentCategory.nameCoin = "\(coinsName)"
+        parentCategory.nameCoin = "\(coinsName)" 
         let dbCoins = realm.objects(CoinCategory.self)
         let realmQuery = dbCoins.where { //дает доступ ко всему рилму и к его всем элементам
             $0._id == coinId
@@ -303,7 +325,9 @@ class ViewController: UIViewController, ViewControllerDelegate {
                 realm.add(parentCategory, update: .all)
             }
         }
-
+        quantitiOrPriceLable.selectedSegmentIndex = 0
+        coinsOrCostTyping(quantitiOrPriceLable as Any)
+        showHud(status: "failure")
 
 
     }
@@ -311,6 +335,7 @@ class ViewController: UIViewController, ViewControllerDelegate {
     func BuyCategoryToDB () {
         guard howManyCoinsLabel.text != "." && costLabel.text != "." else {return}
         guard howManyCoinsLabel.text != "00" && costLabel.text != "00" else {return}
+        print(howManyCoinsLabel as Any)
         howManyValue = Decimal128(floatLiteral: Double(howManyCoinsLabel.text!)!)
         costValue = Decimal128(floatLiteral: Double(costLabel.text!)!)
         howManyCoinsLabel.text = "0.00"
