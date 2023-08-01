@@ -175,9 +175,6 @@ class ViewController: UIViewController, ViewControllerDelegate {
 
    
     @IBAction func numberPressed(_ sender: UIButton) {
-        // MARK: - Решить проблему с точкой и нулями
-       
-        
         let dotsCountQuantity = howManyCoinsLabel.text!.components(separatedBy: ".").count
         let dotsCountCost = costLabel.text!.components(separatedBy: ".").count
         
@@ -185,11 +182,9 @@ class ViewController: UIViewController, ViewControllerDelegate {
         if howManyCoinsLabel.text?.first == "." {
             howManyCoinsLabel.text?.insert("0", at: howManyCoinsLabel.text!.startIndex)
         }
-    
         if howManyCoinsLabel.text! == "00"{
             howManyCoinsLabel.text!.removeFirst()
         }
-       
         if (dotsCountQuantity > 2) {howManyCoinsLabel.text!.remove(at: (howManyCoinsLabel.text!.index(before: howManyCoinsLabel.text!.endIndex)))}
         
         //Ограничения ввода стоимости
@@ -214,7 +209,6 @@ class ViewController: UIViewController, ViewControllerDelegate {
         }
         else {
             let number = sender.currentTitle!
-         
                 if stillTyping {
                     if costLabel.text!.count < 10 {
                         costLabel.text = costLabel.text! + number
@@ -223,7 +217,6 @@ class ViewController: UIViewController, ViewControllerDelegate {
                     costLabel.text = number
                     stillTyping = true
                 }
-            
         }
     }
     
@@ -284,19 +277,63 @@ class ViewController: UIViewController, ViewControllerDelegate {
             BuyCategoryToDB()
             quantitiOrPriceLable.selectedSegmentIndex = 0
             coinsOrCostTyping(quantitiOrPriceLable as Any)
-            showHud(status: "success")
+            
         } else {
             SellCategoryToBD()
-            showHud(status: "failure")
+            quantitiOrPriceLable.selectedSegmentIndex = 0
+            coinsOrCostTyping(quantitiOrPriceLable as Any)
         }
 
         
 
     }
     
+    func BuyCategoryToDB () {
+        guard howManyCoinsLabel.text != "." && costLabel.text != "." else {showHud(status: "failure"); howManyCoinsLabel.text = "0"; costLabel.text = "0"; return}
+        guard howManyCoinsLabel.text != "0" && costLabel.text != "0" else {showHud(status: "failure"); howManyCoinsLabel.text = "0"; costLabel.text = "0"; return}
+        howManyValue = Decimal128(floatLiteral: Double(howManyCoinsLabel.text!)!)
+        costValue = Decimal128(floatLiteral: Double(costLabel.text!)!)
+        howManyCoinsLabel.text = "0"
+        costLabel.text = "0"
+        stillTyping = false
+        
+        let value = EveryBuying(value: ["\(coinsName)", transaction, howManyValue, costValue])
+        let parentCategory = CoinCategory()
+        parentCategory._id = "\(coinId)"
+        parentCategory.symbol = "\(coinTiker)"
+        parentCategory.nameCoin = "\(coinsName)"
+        let dbCoins = realm.objects(CoinCategory.self)
+        let realmQuery = dbCoins.where { //дает доступ ко всему рилму и к его всем элементам
+            $0._id == coinId
+        }
+        parentCategory.coinQuantity = howManyValue + (realmQuery.first?.coinQuantity ?? 0.0 )
+        
+        parentCategory.totalSpend = howManyValue * costValue
+        parentCategory._id = "\(coinId)"
+        parentCategory.symbol = "\(coinTiker)"
+        parentCategory.nameCoin = "\(coinsName)"
+        if realmQuery.first?.coins == nil {
+            parentCategory.coins.append(objectsIn: [value])
+            try! realm.write {
+                realm.add([value])
+                realm.add(parentCategory, update: .all)
+            }
+        } else {
+            parentCategory.coins = realmQuery.first!.coins  //в новый объект добавляем старые данные из рилма
+            parentCategory.totalSpend = (howManyValue * costValue) +  realmQuery.first!.totalSpend!
+            parentCategory.coins.append(objectsIn: [value]) //добавляем новые данные
+            try! realm.write {
+                realm.add([value])
+                realm.add(parentCategory, update: .all)
+            }
+        }
+        showHud(status: "success")
+        
+    }
+    
     func SellCategoryToBD () {
-        guard howManyCoinsLabel.text != "." && costLabel.text != "." else {return}
-        guard howManyCoinsLabel.text != "0" && costLabel.text != "0" else {return}
+        guard howManyCoinsLabel.text != "." && costLabel.text != "." else {showHud(status: "failure"); howManyCoinsLabel.text = "0"; costLabel.text = "0"; return}
+        guard howManyCoinsLabel.text != "0" && costLabel.text != "0" else {showHud(status: "failure"); howManyCoinsLabel.text = "0"; costLabel.text = "0"; return}
         let parentCategory = CoinCategory()
         guard parentCategory._id == coinId else {return }
         
@@ -340,59 +377,9 @@ class ViewController: UIViewController, ViewControllerDelegate {
                 realm.add(parentCategory, update: .all)
             }
         }
-        quantitiOrPriceLable.selectedSegmentIndex = 0
-        coinsOrCostTyping(quantitiOrPriceLable as Any)
-        showHud(status: "failure")
-
-
+        showHud(status: "success")
     }
     
-    func BuyCategoryToDB () {
-        guard howManyCoinsLabel.text != "." && costLabel.text != "." else {return}
-        guard howManyCoinsLabel.text != "0" && costLabel.text != "0" else {return}
-        print(howManyCoinsLabel as Any)
-        howManyValue = Decimal128(floatLiteral: Double(howManyCoinsLabel.text!)!)
-        costValue = Decimal128(floatLiteral: Double(costLabel.text!)!)
-        howManyCoinsLabel.text = "0"
-        costLabel.text = "0"
-        stillTyping = false
-        
-        let value = EveryBuying(value: ["\(coinsName)", transaction, howManyValue, costValue])
-        let parentCategory = CoinCategory()
-        parentCategory._id = "\(coinId)"
-        parentCategory.symbol = "\(coinTiker)"
-        parentCategory.nameCoin = "\(coinsName)"
-        let dbCoins = realm.objects(CoinCategory.self)
-        let realmQuery = dbCoins.where { //дает доступ ко всему рилму и к его всем элементам
-            $0._id == coinId
-        }
-        parentCategory.coinQuantity = howManyValue + (realmQuery.first?.coinQuantity ?? 0.0 )
-        
-        parentCategory.totalSpend = howManyValue * costValue
-        parentCategory._id = "\(coinId)"
-        parentCategory.symbol = "\(coinTiker)"
-        parentCategory.nameCoin = "\(coinsName)"
-        if realmQuery.first?.coins == nil {
-            parentCategory.coins.append(objectsIn: [value])
-            try! realm.write {
-                
-                realm.add([value])
-                realm.add(parentCategory, update: .all)
-            }
-            
-        } else {
-            parentCategory.coins = realmQuery.first!.coins  //в новый объект добавляем старые данные из рилма
-            parentCategory.totalSpend = (howManyValue * costValue) +  realmQuery.first!.totalSpend!
-            parentCategory.coins.append(objectsIn: [value]) //добавляем новые данные
-            try! realm.write {
-                
-                realm.add([value])
-                realm.add(parentCategory, update: .all)
-            }
-        }
-        
-        
-    }
 }
 
 
