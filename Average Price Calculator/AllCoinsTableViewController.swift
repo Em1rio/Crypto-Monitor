@@ -76,9 +76,9 @@ class AllCoinsTableViewController: UITableViewController{
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         if allCoins.isEmpty {
-            delegate?.update(text: "\(selectedItem!.nameLabelText)", text2: "\( selectedItem!.symbolLabelText)", text3: "\(selectedItem!.id)")
+            delegate?.update(coinName: "\(selectedItem!.nameLabelText)", coinSymbol: "\( selectedItem!.symbolLabelText)", idCoin: "\(selectedItem!.id)")
         } else {
-            delegate?.update(text: "\(selectedItemOffline!.name)", text2: "\( selectedItemOffline!.symbol)", text3: "\(selectedItemOffline!.id)")
+            delegate?.update(coinName: "\(selectedItemOffline!.name)", coinSymbol: "\( selectedItemOffline!.symbol)", idCoin: "\(selectedItemOffline!.id)")
         }
         let generator = UINotificationFeedbackGenerator()
         generator.notificationOccurred(.success)

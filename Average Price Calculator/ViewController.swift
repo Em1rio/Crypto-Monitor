@@ -12,7 +12,7 @@ import JGProgressHUD
 
 
 protocol ViewControllerDelegate: AnyObject {
-    func update(text: String, text2: String, text3: String)
+    func update(coinName: String, coinSymbol: String, idCoin: String)
 }
 
 class ViewController: UIViewController, ViewControllerDelegate {
@@ -47,6 +47,7 @@ class ViewController: UIViewController, ViewControllerDelegate {
     var sellOrBuyMode = false
     var transaction: String = "Куплено"
     let color = CABasicAnimation(keyPath: "borderColor")
+    var dotButtonPressed = false
     
     @IBOutlet weak var viewWithNumbers: MyCustomView!
     @IBOutlet var categoriesLabel: [UIButton]!{
@@ -65,11 +66,11 @@ class ViewController: UIViewController, ViewControllerDelegate {
             destination.delegate = self
         }
     
-    func update(text: String, text2: String, text3: String) {
+    func update(coinName: String, coinSymbol: String, idCoin: String) {
         guard stillTyping != false else {return}
-        nameFromAll = text
-        symbolFromAll = text2
-        coinId = text3
+        nameFromAll = coinName
+        symbolFromAll = coinSymbol
+        coinId = idCoin
         coinsName = nameFromAll
         coinTiker = symbolFromAll
         if sellOrBuyMode == false {
@@ -175,31 +176,45 @@ class ViewController: UIViewController, ViewControllerDelegate {
    
     @IBAction func numberPressed(_ sender: UIButton) {
         // MARK: - Решить проблему с точкой и нулями
-        guard howManyCoinsLabel.text != "." && costLabel.text != "." else {return resetButton(sender)}
-        guard howManyCoinsLabel.text != "00" && costLabel.text != "00" else {return resetButton(sender)}
+       
+        
+        let dotsCountQuantity = howManyCoinsLabel.text!.components(separatedBy: ".").count
+        let dotsCountCost = costLabel.text!.components(separatedBy: ".").count
+        
+        //Ограничения ввода количества монет
+        if howManyCoinsLabel.text?.first == "." {
+            howManyCoinsLabel.text?.insert("0", at: howManyCoinsLabel.text!.startIndex)
+        }
+    
+        if howManyCoinsLabel.text! == "00"{
+            howManyCoinsLabel.text!.removeFirst()
+        }
+       
+        if (dotsCountQuantity > 2) {howManyCoinsLabel.text!.remove(at: (howManyCoinsLabel.text!.index(before: howManyCoinsLabel.text!.endIndex)))}
+        
+        //Ограничения ввода стоимости
+        if costLabel.text?.first == "." {
+            costLabel.text?.insert("0", at: costLabel.text!.startIndex)
+        }
+        if costLabel.text! == "00"{
+            costLabel.text!.removeFirst()
+        }
+        if dotsCountCost > 2 {costLabel.text!.remove(at: (costLabel.text!.index(before: costLabel.text!.endIndex)))}
         
         if segmentControlIsOn == false {
             let number = sender.currentTitle!
-            if number == "0.00" && howManyCoinsLabel.text == "0.00" {
-                stillTyping = false
-            }
-            else {
                 if stillTyping {
                     if howManyCoinsLabel.text!.count < 10  {
                         howManyCoinsLabel.text = howManyCoinsLabel.text! + number
-
                     }
                 }else {
                     howManyCoinsLabel.text = number
                     stillTyping = true
                 }
-            }
         }
         else {
             let number = sender.currentTitle!
-            if number == "0.0" && costLabel.text == "0.0" {
-                stillTyping = false
-            } else {
+         
                 if stillTyping {
                     if costLabel.text!.count < 10 {
                         costLabel.text = costLabel.text! + number
@@ -208,16 +223,16 @@ class ViewController: UIViewController, ViewControllerDelegate {
                     costLabel.text = number
                     stillTyping = true
                 }
-            }
+            
         }
     }
     
     @IBAction func resetButton(_ sender: UIButton) {
         if segmentControlIsOn == false {
-            howManyCoinsLabel.text = "0.00"
+            howManyCoinsLabel.text = "0"
             stillTyping = false
         } else {
-            costLabel.text = "0.0"
+            costLabel.text = "0"
             stillTyping = false
            
             
@@ -281,14 +296,14 @@ class ViewController: UIViewController, ViewControllerDelegate {
     
     func SellCategoryToBD () {
         guard howManyCoinsLabel.text != "." && costLabel.text != "." else {return}
-        guard howManyCoinsLabel.text != "00" && costLabel.text != "00" else {return}
+        guard howManyCoinsLabel.text != "0" && costLabel.text != "0" else {return}
         let parentCategory = CoinCategory()
         guard parentCategory._id == coinId else {return }
         
         howManyValue = Decimal128(floatLiteral: Double(howManyCoinsLabel.text!)!)
         costValue = Decimal128(floatLiteral: Double(costLabel.text!)!)
-        howManyCoinsLabel.text = "0.00"
-        costLabel.text = "0.0"
+        howManyCoinsLabel.text = "0"
+        costLabel.text = "0"
         stillTyping = false
         
 
@@ -334,12 +349,12 @@ class ViewController: UIViewController, ViewControllerDelegate {
     
     func BuyCategoryToDB () {
         guard howManyCoinsLabel.text != "." && costLabel.text != "." else {return}
-        guard howManyCoinsLabel.text != "00" && costLabel.text != "00" else {return}
+        guard howManyCoinsLabel.text != "0" && costLabel.text != "0" else {return}
         print(howManyCoinsLabel as Any)
         howManyValue = Decimal128(floatLiteral: Double(howManyCoinsLabel.text!)!)
         costValue = Decimal128(floatLiteral: Double(costLabel.text!)!)
-        howManyCoinsLabel.text = "0.00"
-        costLabel.text = "0.0"
+        howManyCoinsLabel.text = "0"
+        costLabel.text = "0"
         stillTyping = false
         
         let value = EveryBuying(value: ["\(coinsName)", transaction, howManyValue, costValue])
@@ -375,10 +390,11 @@ class ViewController: UIViewController, ViewControllerDelegate {
                 realm.add(parentCategory, update: .all)
             }
         }
-
+        
         
     }
 }
+
 
 
 

@@ -77,13 +77,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M68-Tf-JFe" customClass="MyCustomView" customModule="Crypto_Monitor" customModuleProvider="target">
                                 <rect key="frame" x="42" y="78" width="291" height="78"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wst-mS-vSj">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wst-mS-vSj">
                                         <rect key="frame" x="8" y="12" width="145.5" height="54"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDw-Zm-TIy">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDw-Zm-TIy">
                                         <rect key="frame" x="161.5" y="12" width="121.5" height="54"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" systemColor="systemGrayColor"/>
@@ -572,8 +572,8 @@
                             <constraint firstItem="498-ma-xOO" firstAttribute="leading" secondItem="alH-FF-5RI" secondAttribute="leading" id="Tjw-iM-a2T"/>
                             <constraint firstItem="498-ma-xOO" firstAttribute="trailing" secondItem="alH-FF-5RI" secondAttribute="trailing" id="WW4-uc-Yd6"/>
                             <constraint firstItem="13L-WV-4Yo" firstAttribute="leading" secondItem="alH-FF-5RI" secondAttribute="leading" constant="135" id="cvm-3Q-dPk"/>
-                            <constraint firstItem="alH-FF-5RI" firstAttribute="trailing" secondItem="8Rq-XU-YmF" secondAttribute="trailing" constant="111" id="uOd-OG-Ymi"/>
-                            <constraint firstItem="8Rq-XU-YmF" firstAttribute="leading" secondItem="alH-FF-5RI" secondAttribute="leading" constant="111" id="xuQ-jU-nXd"/>
+                            <constraint firstItem="alH-FF-5RI" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="8Rq-XU-YmF" secondAttribute="trailing" constant="111" id="uOd-OG-Ymi"/>
+                            <constraint firstItem="8Rq-XU-YmF" firstAttribute="leading" relation="lessThanOrEqual" secondItem="alH-FF-5RI" secondAttribute="leading" constant="111" id="xuQ-jU-nXd"/>
                             <constraint firstItem="13L-WV-4Yo" firstAttribute="top" secondItem="8Rq-XU-YmF" secondAttribute="bottom" constant="18" id="zpb-Kt-Od6"/>
                         </constraints>
                     </view>
